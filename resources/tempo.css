@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #efefef;
+	font-family:Helvetica, arial, sans-serif;
+}
+
+a {
+	color:#4c595f;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+.new {
+	color:#A1B874 !important;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+:focus {
+	outline:none;
+}
+
+#container {
+	min-height: 100vh;
+	min-width:100vw;
+	max-width: 100vw;
+	overflow-y: hidden;
+	display:table;
+}	
+
+#rail {
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	clear: left;
+	display:table-cell;
+}
+
+#logo {
+	min-height:155px;
+	width:135px;
+	margin: 0 auto 10px;
+}
+
+#sidebar {
+	margin: 0 auto;
+	min-height: 100%;
+	width: 200px;
+}
+
+#sidebar section {
+	margin-bottom:10px;
+	padding:10px;
+	background-color: #f6f5f4;
+	border:1px solid #e5e5e5;
+	border-radius: 2px;
+}
+
+#sidebar section .top {
+	border-bottom:1px solid #839CA5;
+	width:100%;
+}
+
+#sidebar section .top h3 {
+	display:inline;
+	vertical-align:top;
+}
+
+#sidebar section h3 {
+	font-size:small;
+	padding-bottom:3px;
+}
+
+#sidebar ul {
+	margin: 0;
+	font-size:10pt;
+	margin-top:5px;
+	padding:0;
+}
+#sidebar ul li {
+	border:none;
+	padding-left:0;
+	padding-top:10px;
+	line-height:0.5em;
+	list-style-position:inside;
+	list-style-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH3wEKFwcVRpQKVwAAARNJREFUGNMBCAH3/gCMjYkJw8XBrdPU0P6dnpqAw8XA/6anoo0AAAAAAAAAAAO6urz8Hh8czA4ODVgICQgs2dnXvAQFA2MtLyvewsDE0gMAAAAAwcDC7xQVE8YQEA1y8vHxxNzc2xD3+PdJKCklsgMAAAAAgYN9AIiGjOMcHRn6/v78dtLS1WcFBQRj+Pn5CgIAAAAAISQeAAAAAAAICAgi7O3v/RISESv6+fv/8O/w/QFiZV4AnpuiAHF0bFf7+/qo6efqlgsMC1jr6+v06ejqPQEAAAAAZGdfGgwMC9jq6eznAAD/1vPz81Du7fBgxcTIoQJbXFYG////g+vq7Qvv7u+j8/P0R/Lx85vFxMihAAAAAOhPgG3jIbbCAAAAAElFTkSuQmCC);
+}
+
+#main {
+	vertical-align: top;
+	clear: right;
+	display: table-cell;
+	width: 80%;
+	min-height:100%;
+	overflow:hidden;
+}
+
+#main #userlinks {
+	min-height: 150px;
+	padding-top: 5px;
+}
+#main #userlinks ul {
+	float:right;
+	margin: 0;
+}
+
+#main #userlinks ul li {
+	list-style-type: none;
+	display:inline;
+	padding: 10px;
+	font-size:small;
+}
+#main > #content {
+	max-width: 100%;
+	background-color: #fff;
+	border-radius:2px;
+	border:1px solid #392c23;
+	padding:10px;
+}
+
+#content article {
+	margin-top:25px;
+}
+
+#content article p {
+	text-indent:5px;
+}
+
+#header {
+	border-bottom:1px solid #000;
+	width:100%;
+	margin-bottom:5px;
+}
+
+#header h1, #header .actionlinks {
+	display:inline;
+	vertical-align:top;
+}
+
+#header h1 {
+	font-size:14pt;
+}
