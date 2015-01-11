@@ -94,8 +94,6 @@ class SkinTempo extends SkinTemplate {
 		array_push( $this->mSidebarSections, 
 						array(
 							'title' => $title,
-							'editable' => $editable,
-							'editlink' => $editlink,
 							'content' => $content 
 						)
 				);
@@ -108,13 +106,6 @@ class SkinTempo extends SkinTemplate {
 			$sidebar_html .= Html::openElement( 'section' );
 			$sidebar_html .= Html::openElement( 'div', array( 'class' => 'top' ) );
 			$sidebar_html .= Html::openElement( 'h3' ) . $sidebarItem['title'] . Html::closeElement('h3');
-
-			if ( $sidebarItem['editable'] && $sidebarItem['editlink'] !== '' ) {
-				$sidebar_html .= Html::openElement( 'span', array( 'class' => 'editlink' ) );
-				$sidebar_html .= Html::openElement( 'a', array( 'href' => $sidebarItem['editlink'] ) ) . $this->msg( 'edit' );
-				$sidebar_html .= Html::closeElement('a') . Html::closeElement('span');
-			}
-
 			$sidebar_html .= Html::closeElement( 'div' );
 			$sidebar_html .= $sidebarItem['content'];
 			$sidebar_html .= Html::closeElement( 'section' );
@@ -179,6 +170,13 @@ class TempoTemplate extends BaseTemplate {
 			</div>
 			<div id="main">
 				<div id="userlinks"><ul><?= $skin->getPersonalToolsList() ?></ul></div>
+				<div id="navtabs"><ul>
+										<?php foreach( $skin->getTabs() as $key => $item ) {
+													echo $this->makeListItem( $key, $item );
+											}
+										?>
+								</ul>
+				</div>
 				<div id="content">
 					<div id="header"><h1><?php $this->html('title') ?></h1></div>
 					<article>

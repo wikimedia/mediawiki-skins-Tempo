@@ -34,7 +34,6 @@ a:hover {
 }	
 
 #rail {
-	position: fixed;
 	width: 20%;
 	height: 100%;
 	clear: left;
@@ -101,7 +100,7 @@ a:hover {
 }
 
 #main #userlinks {
-	min-height: 150px;
+	min-height: 50px;
 	padding-top: 5px;
 }
 #main #userlinks ul {
@@ -115,12 +114,66 @@ a:hover {
 	padding: 10px;
 	font-size:small;
 }
+
+#main #navtabs {
+	min-height:36px;
+	vertical-align: bottom;
+	padding: 0;
+	min-width: 100%;
+	margin: 0;
+	overflow:visible;
+	border-bottom:1px solid #e5e5e5;
+}
+
+#main #navtabs ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	vertical-align: bottom;
+	margin-bottom:-1px;
+}
+
+#main #navtabs ul > li {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	list-style-type: none;
+	display: inline-block;
+	height: 100%;
+	margin-right: 10px;
+	vertical-align:bottom;
+	overflow:hidden;
+}
+
+#main #navtabs ul > li > a {
+	padding: 10px;
+	display:block;
+	text-transform: lowercase;
+	line-height: 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+li.selected > a {
+	border-bottom: 1px solid #fff !important;
+}
+
 #main > #content {
 	max-width: 100%;
 	background-color: #fff;
-	border-radius:2px;
-	border:1px solid #392c23;
-	padding:10px;
+	border-radius:0px 2px 2px 2px;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	padding: 10px;
 }
 
 #content article {
