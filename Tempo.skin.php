@@ -16,21 +16,11 @@ class SkinTempo extends SkinTemplate {
 
 	public $mSidebarSections = array();
 
-	/**
-	 * Basically just loads the skin's JavaScript via ResourceLoader.
-	 *
-	 * @param OutputPage $out
-	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 		$this->loadSidebarSections();
 	}
 
-	/**
-	 * Load the skin's CSS via ResourceLoader.
-	 *
-	 * @param OutputPage $out
-	 */
 	public function setupSkinUserCss( OutputPage $out ) {
 
 		parent::setupSkinUserCss( $out );
@@ -58,12 +48,8 @@ class SkinTempo extends SkinTemplate {
 
 		unset($actions['watch']);
 		unset($actions['unwatch']);
-
-		if ( $this->getUser()->isAnon() ) {
-			unset($views['history']);
-		}
-
 		unset($views['view']);
+
 		return array_merge( $namespaces, $views, $actions );
 	}
 
@@ -112,8 +98,13 @@ class TempoTemplate extends BaseTemplate {
 	</head>
 	<body>
 		<div id="container">
+			<div id="top">
+				<div id="topnav">
+					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="70" alt="<?php $this->text( 'sitename' ) ?>"/></div>
+					<div id="userlinks"><ul><?= $skin->getPersonalToolsList() ?></ul></div>
+				</div>
+			</div>
 			<div id="rail">
-				<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 				<div id="sidebar">
 					<?php
 						foreach ( $this->getSidebar() as $boxName => $box ) { ?>
@@ -141,7 +132,6 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 			<div id="main">
-				<div id="userlinks"><ul><?= $skin->getPersonalToolsList() ?></ul></div>
 				<div id="navtabs"><ul>
 										<?php foreach( $skin->getTabs() as $key => $item ) {
 													echo $this->makeListItem( $key, $item );
@@ -157,13 +147,13 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 			<div id="bottom">
-				<div id="footer">
+				<footer>
 					<?php
 						foreach ( $this->getFooterLinks() as $category => $links ) { ?>
 									<ul>
 										<?php
 											foreach ( $links as $key ) { ?>
-												<li><?php $this->html( $key ) ?></li>
+												<!--<li><?php $this->html( $key ) ?></li>-->
 										<?php
 											} 
 										?>
@@ -171,7 +161,7 @@ class TempoTemplate extends BaseTemplate {
 					<?php
 								} 
 					?>
-				</div>
+				</footer>
 			</div>
 		</div>
 	</body>
