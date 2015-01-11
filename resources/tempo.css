@@ -35,7 +35,6 @@ a:hover {
 
 #rail {
 	width: 20%;
-	height: 100%;
 	clear: left;
 	display:table-cell;
 }
@@ -47,8 +46,7 @@ a:hover {
 }
 
 #sidebar {
-	margin: 0 auto;
-	min-height: 100%;
+	margin: 0 auto 1000px;
 	width: 200px;
 }
 
@@ -95,8 +93,8 @@ a:hover {
 	clear: right;
 	display: table-cell;
 	width: 80%;
-	min-height:100%;
 	overflow:hidden;
+	min-height: 60%;
 }
 
 #main #userlinks {
@@ -169,6 +167,7 @@ li.selected > a {
 
 #main > #content {
 	max-width: 100%;
+	min-height: 90%;
 	background-color: #fff;
 	border-radius:0px 2px 2px 2px;
 	border-left:1px solid #e5e5e5;
@@ -197,4 +196,44 @@ li.selected > a {
 
 #header h1 {
 	font-size:14pt;
+}
+
+#bottom { 
+	display: table-row;
+	margin-top:-1px;
+}
+
+#footer {
+	display: table-cell;
+	min-height:50px;
+	background-color: #f6f5f4;
+	position: fixed;
+	bottom: 0;
+	float: left;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+#footer ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#footer ul li {
+	display: inline;
+	padding: 5px;
+}
+
+#footer ul li:after {
+	content:'||';
+	margin-left: 5px;
+}
+
+#footer ul li:last-child:after {
+	content:'';
+}
+
+#footer ul li a {
+	padding: 5px;
 }

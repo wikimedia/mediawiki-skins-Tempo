@@ -83,9 +83,6 @@ class SkinTempo extends SkinTemplate {
 			unset($views['history']);
 		}
 
-		if ( $this->getTitle()->isMainPage() ) {
-			return array();
-		}
 		unset($views['view']);
 		return array_merge( $namespaces, $views, $actions );
 	}
@@ -183,7 +180,23 @@ class TempoTemplate extends BaseTemplate {
 						<?php $this->html( 'bodytext' ) ?>
 					</article>
 				</div>
-				<div id="footer">#footer</div>
+			</div>
+			<div id="bottom">
+				<div id="footer">
+					<?php
+						foreach ( $this->getFooterLinks() as $category => $links ) { ?>
+									<ul>
+										<?php
+											foreach ( $links as $key ) { ?>
+												<li><?php $this->html( $key ) ?></li>
+										<?php
+											} 
+										?>
+									</ul>
+					<?php
+								} 
+					?>
+				</div>
 			</div>
 		</div>
 	</body>
