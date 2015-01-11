@@ -1,9 +1,4 @@
 <?php
-/**
- * BlueSky skin
- *
- * @file
- */
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
@@ -46,27 +41,12 @@ class SkinTempo extends SkinTemplate {
 
 	public function loadSidebarSections() {
 		wfRunHooks( 'LoadSidebarSectionsBefore' );
-		$this->addPersonalLinksBox();
+		$this->addDefaultSidebarItems();
 		wfRunHooks( 'LoadSidebarSectionsAfter' );
 	}
 
-	public function addPersonalLinksBox() {
-		// Wrap it in UL so it formats properly
-		$personalTools = Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
-
-		if ( $this->getUser()->isAnon() ) {
-			$heading = 'Join Us!';
-		} else {
-			$heading = 'My Links';
-		}
-		$this->addSidebarItem( $heading, false, '', $personalTools );
-	}
 	public function getHeadElement() {
 		return $this->getOutput()->buildCssLinks();
-	}
-
-	public function getNavmenu() {
-		return array( 'home' => array( 'text' => 'Home', 'href' => Skin::makeMainPageUrl() ) );
 	}
 
 	public function getTabs() {
@@ -87,6 +67,9 @@ class SkinTempo extends SkinTemplate {
 		return array_merge( $namespaces, $views, $actions );
 	}
 
+	public function addDefaultSidebarItems() {
+
+	}
 	public function addSidebarItem($title, $editable = false, $editlink = '', $content) {
 		array_push( $this->mSidebarSections, 
 						array(
@@ -115,14 +98,6 @@ class SkinTempo extends SkinTemplate {
 }
 
 class TempoTemplate extends BaseTemplate {
-
-	public function makeList($items) {
-		$html = "";
-		foreach($items as $key => $value){
-			$html .= $this->makeListItem($key,$value);
-		}
-		return $html;
-	}	
 
 	public function execute() {
 		$skin = $this->getSkin();
