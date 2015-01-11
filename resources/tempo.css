@@ -162,7 +162,7 @@ a:hover {
 
 li.selected > a {
 	border-bottom: 1px solid #fff !important;
-	font-weight: bold	;
+	font-weight: bold;
 }
 
 #main > #content {
@@ -178,8 +178,7 @@ li.selected > a {
 .mw-ui-container #userloginForm {
 	float: none;
 	display: table-cell;
-	padding: 30px;
-	margin-right: 100px;
+	padding-right: 30px;
 }
 
 
