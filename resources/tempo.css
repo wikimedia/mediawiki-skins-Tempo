@@ -162,6 +162,7 @@ a:hover {
 
 li.selected > a {
 	border-bottom: 1px solid #fff !important;
+	font-weight: bold	;
 }
 
 #main > #content {
@@ -174,6 +175,18 @@ li.selected > a {
 	margin-bottom: 100px;
 }
 
+.mw-ui-container #userloginForm {
+	float: none;
+	display: table-cell;
+	padding: 30px;
+	margin-right: 100px;
+}
+
+
+div.mw-createacct-benefits-container {
+	display: table-cell;
+	float: none !important;
+}
 #content article {
 	margin-top:25px;
 }
