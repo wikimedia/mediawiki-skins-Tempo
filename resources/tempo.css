@@ -113,7 +113,7 @@ a:hover {
 }
 
 #main #navtabs {
-	min-height:36px;
+	min-height:25px;
 	vertical-align: bottom;
 	padding: 0;
 	min-width: 100%;
@@ -148,13 +148,14 @@ a:hover {
 	margin-right: 10px;
 	vertical-align:bottom;
 	overflow:hidden;
+	line-height: 4px;
 }
 
 #main #navtabs ul > li > a {
+	font-size: 10pt;
 	padding: 10px;
 	display:block;
 	text-transform: lowercase;
-	line-height: 15px;
 	background-color: #fff;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -170,7 +171,7 @@ li.selected > a {
 	border-left:1px solid #e5e5e5;
 	border-bottom:1px solid #e5e5e5;
 	padding: 10px;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 #content article {
