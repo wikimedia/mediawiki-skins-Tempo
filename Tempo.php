@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Tempo',
-	'version' => '1.0',
+	'version' => '1.5',
 	'author' => array( 'Lojjik Braughler' ),
 	'description' => 'A delightfully simple skin',
 );
@@ -43,7 +43,8 @@ $wgResourceModules['skins.tempo.js'] = array(
 		'skins/Tempo/resources/js/tempo.js',
 	),
 	'dependencies' => array(
-		'jquery.client'
+		'jquery.client',
+		'jquery.ui'
 	)
 );
 

@@ -231,8 +231,7 @@ a:hover {
 	margin-right: 10px;
 	vertical-align:bottom;
 	overflow:hidden;
-	line-height: 5px;
-	margin-bottom: 1px;
+	line-height: 4px;
 }
 
 #main #navtabs ul > li > a {
@@ -246,8 +245,9 @@ a:hover {
 }
 
 #main #navtabs ul > li.selected > a {
-	border-bottom: 3px solid #fff !important;
 	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 0px;
 }
 
 #main > #content {

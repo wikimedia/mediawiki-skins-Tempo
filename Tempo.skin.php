@@ -24,8 +24,13 @@ class SkinTempo extends SkinTemplate {
 	public function setupSkinUserCss( OutputPage $out ) {
 
 		parent::setupSkinUserCss( $out );
-		$baseModules = array( 'skins.tempo' );
-		$out->addModuleStyles( $baseModules );
+		$baseModules = array();
+		$stylesOnly = array( 'skins.tempo' );
+		$scriptsOnly = array( 'skins.tempo.js' );
+
+		$out->addModules( $baseModules );
+		$out->addModuleStyles( $stylesOnly );
+		$out->addModuleScripts( $baseModules );
 
 	}
 
@@ -33,10 +38,6 @@ class SkinTempo extends SkinTemplate {
 		wfRunHooks( 'LoadSidebarSectionsBefore' );
 		$this->addDefaultSidebarItems();
 		wfRunHooks( 'LoadSidebarSectionsAfter' );
-	}
-
-	public function getHeadElement() {
-		return $this->getOutput()->buildCssLinks();
 	}
 
 	public function getHeadNavigation() {
@@ -107,12 +108,7 @@ class TempoTemplate extends BaseTemplate {
 
 ?>
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<title><?php $this->html( 'title' ) ?></title>
-		<?= $skin->getHeadElement() ?>
-	</head>
+	<?php echo $skin->getOutput()->headElement( $skin ); ?>
 	<body>
 		<div id="container">
 			<div id="top">
