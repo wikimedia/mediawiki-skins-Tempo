@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: table-cell;
 	width: 80%;
 	padding-top: 25px;
-	padding-bottom: 100px;
+	padding-bottom: 75px;
 }
 
 
@@ -254,27 +254,27 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: bottom;
 }
 
-#main #navtabs ul > li {
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-left: 1px solid #e5e5e5;
-	border-top: 1px solid #e5e5e5;
-	border-right: 1px solid #e5e5e5;
+#main #navtabs li {
 	list-style-type: none;
 	display: inline-block;
 	height: 100%;
 	margin-right: 10px;
 	vertical-align:bottom;
 	overflow:hidden;
-	line-height: 4px;
+	background-color: #EFEFEF;
+	line-height: 5px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 }
 
 #main #navtabs ul > li > a {
-	height: 100%;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #EFEFEF) );
+	background: -o-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+	background: linear-gradient(to top, #FFFFFF 0%, #EFEFEF 100%);
+	min-height: 100%;
 	font-size: 10pt;
 	padding: 10px;
 	display:block;
@@ -339,9 +339,7 @@ div.mw-createacct-benefits-container {
 #bottom footer {
 	min-height: 50px;
 	width: 100%;
-	float: left;
-	border: 1px solid #ccc;
-	background-color: #b9cdb5;
+	float: left;	
 	position: absolute;
 	bottom: 0;
 	border-radius: 0;
