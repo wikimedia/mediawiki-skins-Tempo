@@ -231,20 +231,22 @@ a:hover {
 	margin-right: 10px;
 	vertical-align:bottom;
 	overflow:hidden;
-	line-height: 4px;
+	line-height: 5px;
+	margin-bottom: 1px;
 }
 
 #main #navtabs ul > li > a {
+	height: 100%;
 	font-size: 10pt;
 	padding: 10px;
 	display:block;
 	text-transform: lowercase;
 	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
 }
 
-li.selected > a {
-	border-bottom: 1px solid #fff !important;
-	margin-top: -1px;
+#main #navtabs ul > li.selected > a {
+	border-bottom: 3px solid #fff !important;
 	font-weight: bold;
 }
 
