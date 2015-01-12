@@ -154,7 +154,7 @@ class TempoTemplate extends BaseTemplate {
 								</ul>
 				</div>
 				<div id="content">
-					<div id="header"><h1><?php $this->html('title') ?></h1></div>
+					<h1><?php $this->html('title') ?></h1>
 					<article>
 						<?php $this->html( 'bodytext' ) ?>
 					</article>

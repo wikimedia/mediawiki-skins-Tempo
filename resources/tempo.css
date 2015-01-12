@@ -6,6 +6,7 @@ html, body {
 	/*background-color: #efefef;*/
 	background-color: #efefef;
 	font-family:Helvetica, arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 	height: 100%;
 }
 
@@ -17,6 +18,31 @@ a {
 
 a:hover {
 	text-decoration:underline;
+}
+
+ul {
+	list-style-type: disc;
+	line-height: 1.5em;
+}
+
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding-top: .5em;
+	border-bottom: 1px solid #aaa;
 }
 
 :focus {
@@ -257,6 +283,8 @@ a:hover {
 	border-left:1px solid #e5e5e5;
 	border-bottom:1px solid #e5e5e5;
 	padding: 10px;
+	line-height: 1.6;
+	font-size: 0.875em;
 }
 
 .mw-ui-container #userloginForm {
@@ -274,23 +302,24 @@ div.mw-createacct-benefits-container {
 	margin-top:25px;
 }
 
+#content article a {
+	font-weight: bold;
+}
+
 #content article p {
 	text-indent:5px;
 }
 
 #header {
-	border-bottom:1px solid #000;
 	width:100%;
 	margin-bottom:5px;
 }
 
-#header h1, #header .actionlinks {
-	display:inline;
+#main #content h1 {
+	display:inline-block;
 	vertical-align:top;
-}
-
-#header h1 {
-	font-size:14pt;
+	font-size: 16pt;
+	width: 100%;
 }
 
 #bottom {
@@ -378,4 +407,33 @@ div.mw-createacct-benefits-container {
 
 #userlinks li:hover .menu {
 	display: visible;
+}
+
+#wpTextbox1, #wpSummary {
+	width: 100%;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+	margin: 0.3em 0 0 1.6em;
+	padding: 0;
+}
+
+.mw-body h2 {
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+}
+.mw-body h1, .mw-body h2 {
+	font-family: "Linux Libertine",Georgia,Times,serif;
+	line-height: 1.3;
+	padding: 0;
+}
+
+.mw-content-ltr dd, .mw-content-rtl .mw-content-ltr dd {
+	margin-left: 1.6em;
+	margin-right: 0;
+}
+
+.mw-editsection a {
+	font-weight: normal !important;
 }
