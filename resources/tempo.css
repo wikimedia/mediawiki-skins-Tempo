@@ -437,3 +437,13 @@ div.mw-createacct-benefits-container {
 .mw-editsection a {
 	font-weight: normal !important;
 }
+
+#preftoc {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#preftoc li {
+	display: inline-block;
+}
