@@ -39,6 +39,23 @@ class SkinTempo extends SkinTemplate {
 		return $this->getOutput()->buildCssLinks();
 	}
 
+	public function getHeadNavigation() {
+
+		if ( $this->getUser()->isAnon() ) {
+			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin'), $this->msg( 'pt-login' )->plain() );
+		} else {
+			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), 'My Profile' ) .
+							Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
+		}
+
+		$personalMenu = Html::openElement( 'ul' ) . 
+							Html::openElement( 'li' ) . $personalMenu . Html::closeElement( 'li' ) .
+						Html::closeElement( 'ul' );
+
+		return $personalMenu;
+
+	}
+
 	public function getTabs() {
 		$content_navigation = $this->buildContentNavigationUrls();
 
@@ -100,9 +117,9 @@ class TempoTemplate extends BaseTemplate {
 		<div id="container">
 			<div id="top">
 				<div id="topnav">
-					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="70" alt="<?php $this->text( 'sitename' ) ?>"/></div>
+					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="63" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="search"><?php echo $this->makeSearchInput( array( 'id' => 'searchBox', 'type' => 'text', 'class' => 'textbox') ); ?><?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?></div>
-					<div id="userlinks"><ul><?= $skin->getPersonalToolsList() ?></ul></div>
+					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 				</div>
 			</div>
 			<div id="rail">
