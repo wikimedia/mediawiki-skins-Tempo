@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#search').on( 'click', function() {
-		$('#search').val( '' );
+	$('#searchBox').on( 'click', function() {
+		$('#searchBox').val( '' );
 	});
 });
