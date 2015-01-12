@@ -30,7 +30,7 @@ class SkinTempo extends SkinTemplate {
 
 		$out->addModules( $baseModules );
 		$out->addModuleStyles( $stylesOnly );
-		$out->addModuleScripts( $baseModules );
+		$out->addModuleScripts( $scriptsOnly );
 
 	}
 
