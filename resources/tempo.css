@@ -247,12 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main #navtabs ul {
-	float: left;
 	margin: 0;
 	padding: 0;
 	display: block;
 	height: 100%;
-	width: 100%;
 	vertical-align: bottom;
 }
 
@@ -492,4 +490,11 @@ div.mw-createacct-benefits-container {
 
 a.text {
 	font-weight: bold !important;
+}
+
+.tabsleft {
+	float: left;
+}
+.tabsright {
+	float: right;
 }

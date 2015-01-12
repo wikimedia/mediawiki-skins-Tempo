@@ -57,7 +57,7 @@ class SkinTempo extends SkinTemplate {
 
 	}
 
-	public function getTabs() {
+	public function getTabs( $side = 'left' ) {
 		$content_navigation = $this->buildContentNavigationUrls();
 
 		$namespaces = $content_navigation['namespaces'];
@@ -68,7 +68,11 @@ class SkinTempo extends SkinTemplate {
 		unset($actions['unwatch']);
 		unset($views['view']);
 
-		return array_merge( $namespaces, $views, $actions );
+		if ( $side === 'left' ) {
+			return array_merge( $namespaces, $views );
+		} else {
+			return $actions;
+		}
 	}
 
 	public function addDefaultSidebarItems() {
@@ -146,12 +150,19 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 			<div id="main">
-				<div id="navtabs"><ul>
-										<?php foreach( $skin->getTabs() as $key => $item ) {
+				<div id="navtabs"><ul class="tabsleft">
+										<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
 													echo $this->makeListItem( $key, $item );
 											}
 										?>
-								</ul>
+
+									</ul>
+								   	<ul class="tabsright">
+								   		<?php foreach( $skin->getTabs( 'right' ) as $key => $item ) {
+								   					echo $this->makeListItem( $key, $item );
+								   			}
+								   		?>
+								   	</ul>
 				</div>
 				<div id="content">
 					<h1><?php $this->html('title') ?></h1>
