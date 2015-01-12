@@ -3,6 +3,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	/*background-color: #efefef;*/
 	background-color: #efefef;
 	font-family:Helvetica, arial, sans-serif;
 	height: 100%;
@@ -33,6 +34,7 @@ a:hover {
 	max-width: 100vw;
 	display:table;
 	position: relative;
+	overflow-x:hidden;
 }
 
 #top {
@@ -42,6 +44,7 @@ a:hover {
 	margin-bottom: 250px;
 }
 
+
 #topnav {
 	position: fixed;
 	top: 0;
@@ -50,9 +53,44 @@ a:hover {
 	width: 100%;
 	display: table-cell;
 	border: 1px solid #000;
-	background-color: #eee;
+	background-color: #96b874;
 	z-index: 9999999999999999;
-}	
+	overflow:hidden;
+}
+
+#top > #topnav > #userlinks {
+	min-height: 72px;
+	float: right;
+	width: 500px;
+}
+#top > #topnav > #userlinks ul {
+	line-height: 100%;
+	height: 100%;
+	margin: 0;
+	vertical-align: top;
+}
+
+#top > #topnav > #userlinks ul li {
+	list-style-type: none;
+	display:inline-block;
+	font-size:small;
+	min-width: 70px;
+	min-height: 72px;
+	border-left: 1px solid #000;
+	vertical-align: middle;
+}
+
+#top > #topnav > #userlinks ul li a {
+	display: block;
+	color: #475347;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
 
 #rail {
 	padding-top: 25px;
@@ -64,9 +102,11 @@ a:hover {
 
 #logo {
 	float: left;
-	min-height: 100px;
-	width: 100px;
+	min-height: 70px;
+	width: 70px;
 	margin-left: 25px;
+	display: inline-block;
+	padding-right: 50px;
 }
 
 #sidebar {
@@ -121,20 +161,10 @@ a:hover {
 	padding-bottom: 100px;
 }
 
-#top #userlinks {
-	min-height: 50px;
-	padding-top: 5px;
-}
-#top #userlinks ul {
-	float:right;
-	margin: 0;
-}
 
-#top #userlinks ul li {
-	list-style-type: none;
-	display:inline;
-	padding: 10px;
-	font-size:small;
+
+.new {
+	color: #475347 !important;
 }
 
 #main #navtabs {
@@ -244,5 +274,34 @@ div.mw-createacct-benefits-container {
 	border: 1px solid #000;
 	position: absolute;
 	bottom: 0;
+	border-radius: 0;
 }
 
+#search {
+	margin-top: 18px;
+	height: 72px;
+	width: 393;
+	vertical-align: middle;
+	display: inline-block;
+}
+#searchBox {
+	float: left;
+	width: 320px;
+	height: 33px;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+#searchGoButton {
+	color: #fff;
+	height: 33px;
+	width: 73px;
+	background-color: #6d855e;
+	border-radius: 0 5px 0 ;
+	font-size: 1em;
+	border: 0;
+}
+
+.textbox {
+	box-sizing: border-box;
+}

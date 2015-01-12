@@ -101,6 +101,7 @@ class TempoTemplate extends BaseTemplate {
 			<div id="top">
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="70" alt="<?php $this->text( 'sitename' ) ?>"/></div>
+					<div id="search"><?php echo $this->makeSearchInput( array( 'id' => 'searchBox', 'type' => 'text', 'class' => 'textbox') ); ?><?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?></div>
 					<div id="userlinks"><ul><?= $skin->getPersonalToolsList() ?></ul></div>
 				</div>
 			</div>
@@ -153,7 +154,7 @@ class TempoTemplate extends BaseTemplate {
 									<ul>
 										<?php
 											foreach ( $links as $key ) { ?>
-												<!--<li><?php $this->html( $key ) ?></li>-->
+												<li><?php $this->html( $key ) ?></li>
 										<?php
 											} 
 										?>
