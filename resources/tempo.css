@@ -340,11 +340,12 @@ div.mw-createacct-benefits-container {
 	display: inline-block;
 }
 #searchBox {
+	padding: 2px;
 	float: left;
 	width: 320px;
 	height: 33px;
-	font-weight: bold;
 	font-size: 11pt;
+	box-shadow: inset 0 3px 3px #ccc;
 }
 
 #searchGoButton {
