@@ -51,13 +51,13 @@ class SkinTempo extends SkinTemplate {
 		if ( $this->getUser()->isAnon() ) {
 			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin'), $this->msg( 'pt-login' )->plain() );
 		} else {
-			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), 'My Profile' ) .
+			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), $this->msg( 'tempo-myprofile' ) ) .
 							Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
 		}
 
 		$menu[] = $personalMenu;
 
-		$notifications = Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications' ), 'Notifications' ) .
+		$notifications = Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications' ), $this->msg( 'tempo-notifications' )->plain() ) .
 						 Html::openElement( 'ul' ) .  $this->getNotifications() . Html::closeElement( 'ul' );
 
 		$menu[] = $notifications;
