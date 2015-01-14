@@ -1,8 +1,8 @@
 {
         "@metadata": {
-                "authors": []
+                "authors": [ "Lojjik Braughler" ]
         },
 
-	"tempo-myprofile" : "My Profile"
+	"tempo-myprofile" : "My Profile",
 	"tempo-notifications": "Notifications"
 }
