@@ -154,7 +154,15 @@ SX1ogoSkKySb/yIokIwC60bb6x+vTZfkN5FC1AAAAABJRU5ErkJggg==);
 	transition: color .2s, background-color .2s, border .2s;
 }
 
-#top > #topnav > #userlinks > ul > li:last-child {
+
+/* FIXME: This looks dumb, even if it works */
+
+.new {
+	color: #475347 !important;
+}
+
+article .new {
+	color: #7F0000 !important;
 }
 
 #top > #topnav > #userlinks > ul > li:hover {
@@ -422,7 +430,7 @@ div.mw-createacct-benefits-container {
 }
 
 .new {
-	color: #4c595f !important;
+	color: #7F0000;
 }
 
 .menu {
