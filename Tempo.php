@@ -1,15 +1,26 @@
 <?php
-/*
+
+
+/**
+ * Tempo skin by Lojjik Braughler
+ *
+ * To the extent possible under law, the person who associated CC0 with
+ * Tempo has waived all copyright and related or neighboring rights
+ * to Tempo.
+ *
+ * You should have received a copy of the CC0 legalcode along with this
+ * work.  If not, see <http://creativecommons.org/publicdomain/zero/1.0/>
  *
  * @file
  * @ingroup Skins
  * @author Lojjik Braughler
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  *
  * To install place the Tempo folder (the folder containing this file!) into
  * skins/ and add this line to your wiki's LocalSettings.php:
  * require_once("$IP/skins/Tempo/Tempo.php");
+ *
  */
+
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
@@ -22,6 +33,7 @@ $wgExtensionCredits['skin'][] = array(
 	'version' => '1.5',
 	'author' => array( 'Lojjik Braughler' ),
 	'description' => 'A delightfully simple skin',
+	'license' => 'CC0 1.0 Universal'
 );
 
 $wgValidSkinNames['tempo'] = 'Tempo';
