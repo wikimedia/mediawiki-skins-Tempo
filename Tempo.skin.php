@@ -106,7 +106,7 @@ class SkinTempo extends SkinTemplate {
         $top_search = '
                         <form id="bubble_search" name="search_site" action="' . $searchTitle->getFullURL() . '" method="get">
                                 <input type="search" id="searchInput" class="search_box" name="search" x-webkit-speech />
-                                <input type="submit" value="" id="searchButton" class="search_button searchIcon" />
+                                <input type="submit" id="searchButton" class="search_button" value="Search"/>
                         </form>';
 
         return $top_search;
@@ -126,6 +126,22 @@ class SkinTempo extends SkinTemplate {
 		
 		return $sidebar_html;
 	}
+
+	public function getNameForUser() {
+		$user = $this->getUser();
+
+		if ( $user->isAnon() ) {
+			return $this->msg( 'tempo-guest' );
+		} 
+		
+		$realName = $user->getRealName();
+
+		if ( !empty( $realName ) ) {
+				return $realName;
+		}
+
+		return $user->getName();
+	}
 	
 }
 
@@ -143,6 +159,8 @@ class TempoTemplate extends BaseTemplate {
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
+					<?php // $this->msg() doesn't work here, wtf? ?>
+					<div id="hello"><p><?php echo wfMessage( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
 					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 				</div>
 			</div>

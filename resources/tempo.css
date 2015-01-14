@@ -63,56 +63,70 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	height: 76px;
 	margin-bottom: 250px;
+	position: relative;
+}
+
+
+#logo {
+	width: 20%;
+	height: 76px;
+	float: left;
+	clear: left;
+	display: table-cell;
+}
+
+#logo img {
+	width: 66px;
+	margin-left:109px;
+
+}
+
+#bubble_search {
+	height: 26px;
+	padding: 0;
+	width: 100%;
 }
 
 #topSearch {
-	margin-top: 18px;
-	margin-left: 125px;
 	height: 76px;
-	width: 400px;
+	width: 30%;
+	line-height: 76px;
+	display: table-row;
+	position: absolute;
+	left: 20%;
 	vertical-align: middle;
-	display: inline-block;
-	position: relative;
+	margin-top: 1.5em;
 }
 #searchInput {
-	padding-left: 7px;
-	padding-right: 25px;
+	margin-left: 0px;
+	width: 75%;
+	/* freakin' firefox.... */
+	line-height: 22px;
+	position: relative;
 	float: left;
-	width: 400px;
-	height: 25px;
-	font-size: 11pt;
-	display: block;
+	display: table-cell;
+	max-height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 12pt;
 	box-shadow: inset 0 3px 3px #ccc;
+	background-color: #fff;
+
 }
 
-#searchButton {
-	color: #fff;
-	height: 25px;
-	width: 73px;
-	background-color: transparent;
-	border-radius: 0 5px 0 ;
-	font-size: 1em;
+#topSearch #searchButton {
+	vertical-align: top;
+	color: #fafafa;
+	background-color: #007bff;
 	border: 0;
 	position: relative;
-	right: 0;
-}
+	top: 0;
 
-#topSearch .searchIcon {
-	position: absolute;
-	top: 5px;
-	right: 7px;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
-WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEOAB8K34y9WQAAAURJREFUOMuVkzFLBDEQhb+s+BsO
-C+X0KsHmCsVCJRZiaWrBWhAbwQhiJaIoEY5Dwdp/EEu7oDZnIYKNjZ7VcY21lazNBJbcrp6v2ZnM
-zNs3k4lC4IPDaIsPLgNWgTGgD9wabb9jPIVKii+AbQZxZbTdKiNRheIXYAZ4AFrAO1AHdoAl4NVo
-O12qxAfX8sHlPriDqCj57kn8sqqFHOgYbeepgA/uDlgEVFFB5oNbFrsd/1hSDNAWd6UYy4Ca2N2y
-KQOx5w9xaylBT+zGHwoa4vbKEnIf3BO/wAf3KLMiVQBwCjR9cGcVt3AEzALHA7dQ2IMOMAc8yx68
-AVOyB03J78vZV5xXuoknwH5JB4fABjAJfAITkUTFjJtwzprejZIX4lsw2t7L2Yhs53iRRDEkZB4p
-SX1ogoSkKySb/yIokIwC60bb6x+vTZfkN5FC1AAAAABJRU5ErkJggg==);
-	height: 16px;
-	width: 16px;
-	display: inline-block;
-
+	height: 100%;
+	width: 20%;
+	left: 0px;
+	display: table-cell;
 }
 
 #topnav {
@@ -124,13 +138,70 @@ SX1ogoSkKySb/yIokIwC60bb6x+vTZfkN5FC1AAAAABJRU5ErkJggg==);
 	display: table-cell;
 	border-bottom: 1px solid #e5e5e5;
 	background-color: #b9cdb5;
-	z-index: 9999999999999999;
+	z-index: 999999999;
 }
+
+#hello {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 76px;
+	width: 25%;
+	display: table-cell;
+    box-shadow:6px 0 8px -7px black;
+    overflow: hidden;
+}
+
+#hello p {
+	padding-right: 25px;
+	font-size: small;
+	max-height: 76px;
+	vertical-align: middle;
+	display: block;
+	margin: 0;
+	line-height: 76px;
+	float: right;
+}
+
+/* I hate Safari */
+
+/*@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { 
+
+	::i-block-chrome,#hello{
+     	box-shadow: none;
+    }
+
+    ::i-block-chrome,#hello p {
+    	padding-right: 100px;
+    }
+
+    _::-webkit-full-page-media, _:future, :root #hello {
+    	box-shadow: none;
+    }
+
+    _::-webkit-full-page-media, _:future, :root #hello p {
+    	padding-right: 100px;
+    }
+
+    #hello {(;
+    	box-shadow: none;
+    );}
+
+   	#hello p {(;
+   		padding-right: 100px;
+   	);}
+
+}*/
 
 #top > #topnav > #userlinks {
 	min-height: 76px;
 	float: right;
-	width: 350px;
+	width: 25%;
+	clear: right;
+	position: absolute;
+	right: 0;
+	clear: right;
+	display: table-cell;
 }
 
 #top > #topnav > #userlinks > ul {
@@ -139,6 +210,7 @@ SX1ogoSkKySb/yIokIwC60bb6x+vTZfkN5FC1AAAAABJRU5ErkJggg==);
 	margin: 0;
 	vertical-align: top;
 	float: left;
+	padding: 0;
 }
 
 #top > #topnav > #userlinks > ul > li {
@@ -151,18 +223,8 @@ SX1ogoSkKySb/yIokIwC60bb6x+vTZfkN5FC1AAAAABJRU5ErkJggg==);
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
+	left: 0;
 	transition: color .2s, background-color .2s, border .2s;
-}
-
-
-/* FIXME: This looks dumb, even if it works */
-
-.new {
-	color: #475347 !important;
-}
-
-article .new {
-	color: #7F0000 !important;
 }
 
 #top > #topnav > #userlinks > ul > li:hover {
@@ -175,14 +237,16 @@ article .new {
 
 #top > #topnav > #userlinks > ul > li > a {
 	display: block;
+	height: 76px;
 	color: #475347;
 	text-transform: uppercase;
+	vertical-align: middle;
 	text-align: center;
+	line-height: 76px;
 	font-weight: bold;
 	font-size: 10px;
-	padding-top: 20px;
-	padding-right: 5px;
 	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #top > #topnav > #userlinks > ul > li > ul {
@@ -228,15 +292,6 @@ article .new {
 	width: 20%;
 	clear: left;
 	display:table-cell;
-}
-
-#logo, #logo img {
-	float: left;
-	height: 76px;
-	width: 66px;
-	margin-left: 50px;
-	display: inline-block;
-	padding-right: 50px;
 }
 
 #sidebar {
@@ -529,4 +584,14 @@ a.text {
 
 .successbox {
 	padding: 0;
+}
+
+/* FIXME: This looks dumb, even if it works */
+
+.new {
+	color: #475347 !important;
+}
+
+article .new {
+	color: #7F0000 !important;
 }

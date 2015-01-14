@@ -4,5 +4,7 @@
         },
 
 	"tempo-myprofile" : "My Profile",
-	"tempo-notifications": "Notifications"
+	"tempo-notifications": "Notifications",
+	"tempo-hello": "Hello, $1",
+	"tempo-guest": "Guest"
 }
