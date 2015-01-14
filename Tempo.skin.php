@@ -40,7 +40,13 @@ class SkinTempo extends SkinTemplate {
 		wfRunHooks( 'LoadSidebarSectionsAfter' );
 	}
 
+
+	public function getNotifications() {
+		return '';
+	}
 	public function getHeadNavigation() {
+
+		$menu = array();
 
 		if ( $this->getUser()->isAnon() ) {
 			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin'), $this->msg( 'pt-login' )->plain() );
@@ -49,11 +55,19 @@ class SkinTempo extends SkinTemplate {
 							Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
 		}
 
-		$personalMenu = Html::openElement( 'ul' ) . 
-							Html::openElement( 'li' ) . $personalMenu . Html::closeElement( 'li' ) .
-						Html::closeElement( 'ul' );
+		$menu[] = $personalMenu;
 
-		return $personalMenu;
+		$notifications = Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications' ), 'Notifications' ) .
+						 Html::openElement( 'ul' ) .  $this->getNotifications() . Html::closeElement( 'ul' );
+
+		$menu[] = $notifications;
+
+		$userlinks = Html::openElement( 'ul' );
+		foreach ( $menu as $menuItem ) {
+			$userlinks .= Html::openElement( 'li' ) . $menuItem . Html::closeElement( 'li' );
+		}
+
+		return $userlinks;
 
 	}
 
@@ -87,6 +101,17 @@ class SkinTempo extends SkinTemplate {
 				);
 	}
 
+	public function getSearchForm() {
+		$searchTitle = SpecialPage::getTitleFor( 'Search' );
+        $top_search = '
+                        <form id="bubble_search" name="search_site" action="' . $searchTitle->getFullURL() . '" method="get">
+                        		<div class="searchIcon"></div>
+                                <input type="search" id="searchInput" class="search_box" name="search" x-webkit-speech />
+                                <input type="submit" value="" id="searchButton" class="search_button searchIcon" />
+                        </form>';
+
+        return $top_search;
+	}
 	public function getSidebarItems() {
 		$sidebar_html = '';
 
@@ -117,8 +142,8 @@ class TempoTemplate extends BaseTemplate {
 		<div id="container">
 			<div id="top">
 				<div id="topnav">
-					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="63" alt="<?php $this->text( 'sitename' ) ?>"/></div>
-					<div id="search"><?php echo $this->makeSearchInput( array( 'id' => 'searchBox', 'type' => 'text', 'class' => 'textbox') ); ?><?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?></div>
+					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
+					<div id="search"><?php echo $skin->getSearchForm() ?></div>
 					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 				</div>
 			</div>
