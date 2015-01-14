@@ -1,0 +1,6 @@
+@charset "UTF-8"
+
+#top, #navtabs, #rail {
+	display: none;
+	visbility: hidden;
+}

@@ -32,7 +32,7 @@ $wgExtensionCredits['skin'][] = array(
 	'version' => '1.5',
 	'author' => array( 'Lojjik Braughler' ),
 	'description' => 'A delightfully simple skin',
-	'license' => 'CC0 1.0 Universal'
+	'license-name' => 'CC0 1.0 Universal'
 );
 
 $wgValidSkinNames['tempo'] = 'Tempo';
@@ -44,6 +44,7 @@ $wgMessagesDirs['SkinTempo'] = __DIR__ . '/i18n';
 $wgResourceModules['skins.tempo'] = array(
 	'styles' => array(
 		'skins/Tempo/resources/tempo.css' => array( 'media' => 'screen' ),
+		'skins/Tempo/resources/printable.css' => array( 'media' => 'print' )
 	),
 	'position' => 'top'
 );
