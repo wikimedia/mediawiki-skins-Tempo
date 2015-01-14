@@ -518,3 +518,7 @@ a.text {
 .tabsright {
 	float: right;
 }
+
+.successbox {
+	padding: 0;
+}
