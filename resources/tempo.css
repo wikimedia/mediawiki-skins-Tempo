@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #topSearch #searchButton {
 	color: #fafafa;
-	background-color: #007bff;
+	background-color: #6d855e; /* rgb(0, 80, 173) -> diff is 0, 43, 82) */
 	border: 0;
 	height: 26px;
 	line-height: 26px;
@@ -143,10 +143,11 @@ h1, h2, h3, h4, h5, h6 {
 		left: 75%;
 		bottom: 34%;
 		display: inline;
-		position: absolute;
+		position: absolute; /* 109, 133, 94 */  /* 109, 53, 12 */
 		border-style: solid;
 		border-width: 12.5px 22.7px 12.5px 0;
-		border-color: transparent #007bff transparent transparent;
+		border-color: transparent #6d855e transparent transparent; /* rgb(0, 123, 255) */
+		-webkit-transform:rotate(360deg);
 		z-index: 999999;
 }
 
