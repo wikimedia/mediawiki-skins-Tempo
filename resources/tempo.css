@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 250px;
 }
 
-#search {
+#topSearch {
 	margin-top: 18px;
 	margin-left: 125px;
 	height: 76px;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 	right: 0;
 }
 
-#search .searchIcon {
+#topSearch .searchIcon {
 	position: absolute;
 	top: 5px;
 	right: 7px;

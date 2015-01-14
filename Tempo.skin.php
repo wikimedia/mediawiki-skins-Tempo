@@ -142,7 +142,7 @@ class TempoTemplate extends BaseTemplate {
 			<div id="top">
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
-					<div id="search"><?php echo $skin->getSearchForm() ?></div>
+					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
 					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 				</div>
 			</div>
