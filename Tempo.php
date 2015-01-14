@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Tempo skin by Lojjik Braughler
  *
