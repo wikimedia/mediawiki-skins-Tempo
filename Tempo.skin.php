@@ -159,8 +159,7 @@ class TempoTemplate extends BaseTemplate {
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
-					<?php // $this->msg() doesn't work here, wtf? ?>
-					<div id="hello"><p><?php echo wfMessage( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
+					<div id="hello"><p><?php echo $skin->msg( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
 					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 				</div>
 			</div>
