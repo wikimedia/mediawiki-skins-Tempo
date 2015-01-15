@@ -84,9 +84,9 @@ class SkinTempo extends SkinTemplate {
 
 		if ( $side === 'left' ) {
 			return array_merge( $namespaces, $views );
-		} else {
-			return $actions;
 		}
+
+		return $actions;
 	}
 
 	public function addDefaultSidebarItems() {
