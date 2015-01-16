@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"tempo-desc": "Eine einfache Benutzeroberfläche",
+	"tempo-myprofile": "Mein Profil",
+	"tempo-notifications": "Benachrichtigungen",
+	"tempo-hello": "Hallo, $1",
+	"tempo-guest": "Gast"
+}

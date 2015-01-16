@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"tempo-myprofile": "Mój profil",
+	"tempo-notifications": "Powiadomienia",
+	"tempo-hello": "Witaj $1"
+}
