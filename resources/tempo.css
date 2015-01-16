@@ -428,6 +428,8 @@ th {
   padding: 0;
 }
 
+
+
 * { 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -494,10 +496,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #top {
 	display: table-row;
-	clear: both;
 	height: 76px;
+	/*clear: both;
 	margin-bottom: 250px;
-	position: relative;
+	position: relative;*/
 }
 
 
@@ -516,14 +518,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bubble_search {
-	height: 100%;
-	padding: 0;
+	/*height: 100%;
+	padding: 0;*/
 	width: 100%;
-	vertical-align: middle;
+	/*vertical-align: middle;
 	position: absolute;
 	top: 0;
 	display: table;
-	overflow: visible;
+	overflow: visible;*/
 }
 
 #topSearch {
@@ -558,9 +560,9 @@ h1, h2, h3, h4, h5, h6 {
 	border: 0;
 	height: 26px;
 	line-height: 23px;
-	
-	right: 5px;
-	margin: 0;
+	margin-left: 5px;
+	/*right: 5px;
+	margin: 0;*/
 	width: 60px;
 	display: table-cell;
 }
@@ -577,6 +579,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-width: 12.5px 22.7px 12.5px 0;
 	border-color: transparent #6d855e transparent transparent;
 	-webkit-transform:rotate(360deg);
+	display: none;
 }
 
 #topnav {
@@ -592,14 +595,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hello {
-	position: absolute;
+	display: inline-block;
+	/*position: absolute;
 	top: 0;
-	left: 50%;
+	left: 60%;
 	height: 76px;
-	width: 25%;
-	display: table-cell;
+	width: 120px;
+	overflow: hidden;
+	display: table-cell;*/
     box-shadow:6px 0 8px -7px black;
-    overflow: hidden;
 }
 
 #hello p {
@@ -609,21 +613,28 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: middle;
 	margin: 0;
 	line-height: 76px;
+	float: right;
 }
 
-
-#top > #topnav > #userlinks {
-	min-height: 76px;
+#top > #topnav > .userlinks-wrapper{
+	width: 300px;
+	height: 100%;
+	margin-right: 120px; 
 	float: right;
-	width: 25%;
+}
+
+#top > #topnav > .userlinks-wrapper > #userlinks {
+	display: inline-block;
+	/*min-height: 76px;
+	width: 29%;
 	clear: right;
 	position: absolute;
 	right: 0;
 	clear: right;
-	display: table-cell;
+	display: table-cell;*/
 }
 
-#top > #topnav > #userlinks > ul {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul {
 	line-height: 100%;
 	height: 100%;
 	margin: 0;
@@ -632,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-#top > #topnav > #userlinks > ul > li {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li {
 	float: left;
 	list-style-type: none;
 	display:inline-block;
@@ -646,15 +657,15 @@ h1, h2, h3, h4, h5, h6 {
 	transition: color .2s, background-color .2s, border .2s;
 }
 
-#top > #topnav > #userlinks > ul > li:hover {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li:hover {
 	background-color:#505f4c;
 }
-#top > #topnav > #userlinks > ul > li:hover > a {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li:hover > a {
 	text-decoration:none;
 	color: #fff;
 }
 
-#top > #topnav > #userlinks > ul > li > a {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > a {
 	display: block;
 	height: 76px;
 	color: #475347;
@@ -668,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 5px;
 }
 
-#top > #topnav > #userlinks > ul > li > ul {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul {
 	padding: 0;
 	min-height: 100px;
 	position: absolute;
@@ -686,20 +697,20 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid #b9cdb5;
 }
 
-#top > #topnav > #userlinks > ul > li > ul > li a {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li a {
 	display: block;
 	padding: 0 20px 0 15px;
 	line-height: 26px;
 
 }
 
-#top > #topnav > #userlinks > ul > li > ul > li:hover a {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li:hover a {
 	background-color:#b9cdb5;
 	color: #fff !important;
 	text-decoration: none;
 }
 
-#top > #topnav > #userlinks > ul > li:hover ul {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li:hover ul {
 	display: block;
 	opacity: 1;
 	visibility: visible;
@@ -862,11 +873,11 @@ div.mw-createacct-benefits-container {
 	width: 100%;
 }
 
-#bottom {
+#container #bottom {
 	display: table-row;
 }
 
-#bottom footer {
+#container #bottom footer {
 	min-height: 50px;
 	width: 100%;
 	float: left;	

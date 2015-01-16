@@ -84,9 +84,9 @@ class SkinTempo extends SkinTemplate {
 
 		if ( $side === 'left' ) {
 			return array_merge( $namespaces, $views );
+		} else {
+			return $actions;
 		}
-
-		return $actions;
 	}
 
 	public function addDefaultSidebarItems() {
@@ -159,57 +159,61 @@ class TempoTemplate extends BaseTemplate {
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
-					<div id="hello"><p><?php echo $skin->msg( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
-					<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
+					<div class="userlinks-wrapper">
+						<div id="hello"><p><?php echo $skin->msg( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
+						<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
+					</div>
 				</div>
 			</div>
-			<div id="rail">
-				<div id="sidebar">
-					<?php
-						foreach ( $this->getSidebar() as $boxName => $box ) { ?>
-									<section id="<?php echo Sanitizer::escapeId( $box['id'] ) ?>"<?php echo Linker::tooltip( $box['id'] ) ?>>
-									<div class="top"><h3><?php echo htmlspecialchars( $box['header'] ); ?></h3></div>
 
-									<?php if ( is_array( $box['content'] ) ) { ?>
-										<ul>
-											<?php
-													foreach ( $box['content'] as $key => $item ) {
-														echo $this->makeListItem( $key, $item );
+				<div id="rail">
+					<div id="sidebar">
+						<?php
+							foreach ( $this->getSidebar() as $boxName => $box ) { ?>
+										<section id="<?php echo Sanitizer::escapeId( $box['id'] ) ?>"<?php echo Linker::tooltip( $box['id'] ) ?>>
+										<div class="top"><h3><?php echo htmlspecialchars( $box['header'] ); ?></h3></div>
+
+										<?php if ( is_array( $box['content'] ) ) { ?>
+											<ul>
+												<?php
+														foreach ( $box['content'] as $key => $item ) {
+															echo $this->makeListItem( $key, $item );
+														}
+												?>
+													</ul>
+												<?php
+													} else {
+														echo $box['content'];
 													}
-											?>
-												</ul>
-											<?php
-												} else {
-													echo $box['content'];
+
+											?> 
+										</section> 
+										<?php
+												} 
+						?>
+					</div>
+				</div>
+				<div id="main">
+					<div id="navtabs"><ul class="tabsleft">
+											<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
+														echo $this->makeListItem( $key, $item );
 												}
+											?>
 
-										?> 
-									</section> 
-									<?php
-											} 
-					?>
-				</div>
-			</div>
-			<div id="main">
-				<div id="navtabs"><ul class="tabsleft">
-										<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
-													echo $this->makeListItem( $key, $item );
-											}
-										?>
-
-									</ul>
-								   	<ul class="tabsright">
-								   		<?php foreach( $skin->getTabs( 'right' ) as $key => $item ) {
-								   					echo $this->makeListItem( $key, $item );
-								   			}
-								   		?>
-								   	</ul>
-				</div>
-				<div id="content">
-					<h1><?php $this->html('title') ?></h1>
-					<article>
-						<?php $this->html( 'bodytext' ) ?>
-					</article>
+										</ul>
+									   	<ul class="tabsright">
+									   		<?php foreach( $skin->getTabs( 'right' ) as $key => $item ) {
+									   					echo $this->makeListItem( $key, $item );
+									   			}
+									   		?>
+									   	</ul>
+					</div>
+					<div id="content">
+						<h1><?php $this->html('title') ?></h1>
+						<article>
+							<?php $this->html( 'bodytext' ) ?>
+						</article>
+					</div>
 				</div>
 			</div>
 			<div id="bottom">
