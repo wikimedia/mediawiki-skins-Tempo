@@ -31,7 +31,7 @@ $wgExtensionCredits['skin'][] = array(
 	'name' => 'Tempo',
 	'version' => '1.5',
 	'author' => array( 'Lojjik Braughler' ),
-	'description' => 'A delightfully simple skin',
+	'descriptionmsg' => 'tempo-desc',
 	'license-name' => 'CC0 1.0'
 );
 

@@ -3,6 +3,7 @@
                 "authors": []
         },
 
+	"tempo-desc" : "A delightfully simple skin",
 	"tempo-myprofile" : "My Profile",
 	"tempo-notifications": "Notifications",
 	"tempo-hello": "Hello, $1",
