@@ -42,8 +42,9 @@ class SkinTempo extends SkinTemplate {
 
 
 	public function getNotifications() {
-		return '';
+		return '<li>' . $this->msg( 'tempo-nonotifications' ) . '</li>';
 	}
+
 	public function getHeadNavigation() {
 
 		$menu = array();
