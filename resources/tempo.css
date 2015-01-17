@@ -523,19 +523,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#bubble_search {
-	/*height: 100%;
-	padding: 0;*/
-	width: 70%;
-	/*vertical-align: middle;
-	position: absolute;
-	top: 0;
-	display: table;
-	overflow: visible;*/
-}
-
 #topSearch {
-	width: 45%;
+	width: 40%;
 	line-height: 76px;
 	display: inline-block;
 	/*height: 76px;
@@ -543,6 +532,18 @@ h1, h2, h3, h4, h5, h6 {
 	left: 20%;
 	vertical-align: middle;*/
 }
+
+#bubble_search {
+	/*height: 100%;
+	padding: 0;*/
+	width: 100%;
+	/*vertical-align: middle;
+	position: absolute;
+	top: 0;
+	display: table;
+	overflow: visible;*/
+}
+
 #searchInput {
 	width: 80%;
 	/* freakin' firefox.... */
@@ -623,7 +624,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #top > #topnav > .userlinks-wrapper{
-	width: 400px;
+	width: 450px;
 	height: 100%;
 	display: inline-block;
 	float: right;
@@ -689,15 +690,15 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	min-height: 100px;
 	position: absolute;
-	top: 75px;
+	/*top: 75px;
 	left: 0;
-	width: 300px;
 	float: right;
-	display: none;
 	margin: 0;
+	visibility: hidden;*/
+	width: 250px;
+	display: none;
 	padding: 10px 0;
 	z-index: 1000;
-	visibility: hidden;
 	list-style-type: none;
 	background-color: #f9f9f9;
 	border: 1px solid #b9cdb5;
@@ -1030,4 +1031,25 @@ a.text {
 
 article .new {
 	color: #7F0000 !important;
+}
+
+@media screen and (max-width: 1157px){
+	#topSearch{
+		width: 30%;
+	}
+	#searchInput{
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 940px){
+	#top > #topnav > .userlinks-wrapper{
+		width: 300px;
+	}
+	#topSearch{
+		width: 40%;
+	}
+	#searchInput{
+		width: 65%;
+	}
 }
