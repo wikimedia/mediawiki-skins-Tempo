@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"tempo-desc": "En einfache Benozerinterface",
+	"tempo-myprofile": "Mäi Profil",
+	"tempo-notifications": "Notifikatiounen",
+	"tempo-nonotifications": "Et gëtt keng Message fir ze weisen.",
+	"tempo-hello": "Bonjour $1",
+	"tempo-guest": "Gaascht"
+}
