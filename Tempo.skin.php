@@ -106,7 +106,7 @@ class SkinTempo extends SkinTemplate {
         $top_search = '
                         <form id="bubble_search" name="search_site" action="' . $searchTitle->getFullURL() . '" method="get">
                                 <input type="text" id="searchInput" class="search_box" name="search" x-webkit-speech />
-                                <span id="arrow"></span><input type="submit" id="searchButton" class="search_button" value="Search"/>
+                                <span id="arrow"></span><input type="submit" id="searchButton" class="search_button" value="' . $this->msg( 'searchbutton' ) . '"/>
                         </form>';
 
         return $top_search;
