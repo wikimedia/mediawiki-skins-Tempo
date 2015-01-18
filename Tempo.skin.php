@@ -192,6 +192,13 @@ class TempoTemplate extends BaseTemplate {
 					</div>
 				</div>
 				<div id="main">
+					<?php
+						if ( $this->data['sitenotice'] ) {
+					?>
+							<div id="sitenotice"><?php echo $this->html( 'sitenotice' ) ?></div>
+					<?php
+						}
+					?>
 					<div id="navtabs"><ul class="tabsleft">
 											<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
 														echo $this->makeListItem( $key, $item );

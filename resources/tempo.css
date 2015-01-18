@@ -1110,3 +1110,14 @@ td.mw-label{
 		width: 65%;
 	}
 }
+
+#sitenotice {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right:10px;
+	text-align:center;
+	background-color: #f6f6e4;
+	border: 1px solid #e5e5e5;
+
+}
