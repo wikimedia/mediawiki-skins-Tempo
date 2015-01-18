@@ -241,6 +241,19 @@ class TempoTemplate extends BaseTemplate {
 					<?php
 								} 
 					?>
+						<ul>
+							<?php
+								foreach ( $this->getFooterIcons( 'icononly' ) as $blockName => $footerIcons ) { ?>
+									<li>
+										<?php
+												foreach ( $footerIcons as $icon ) {
+													echo $this->getSkin()->makeFooterIcon( $icon );
+												}
+										?>
+									</li>
+							<?php
+								} ?>
+						</ul>
 					</footer>
 				</div>
 			</div>
