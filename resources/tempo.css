@@ -565,7 +565,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #searchInput {
-	width: 80%;
+	width: 70%;
 	/* freakin' firefox.... */
 	line-height: 22px;
 	/*position: relative;
@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #searchButton {
-	padding: 0;
+	padding: 5px;
 	color: #fafafa;
 	background-color: #6d855e;
 	border: 0;
@@ -590,8 +590,8 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 23px;
 	margin-left: 5px;
 	/*right: 5px;
-	margin: 0;*/
-	width: 60px;
+	margin: 0;
+	width: 0;*/
 	display: table-cell;
 }
 
@@ -763,6 +763,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f6f5f4;
 	border:1px solid #e5e5e5;
 	border-radius: 2px;
+	width: 215px
 }
 
 #sidebar section .top {
@@ -802,7 +803,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: table-cell;
 	width: 80%;
 	padding-top: 25px;
-	padding-bottom: 75px;
+	padding-bottom: 10px;
 }
 
 
@@ -867,6 +868,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 	line-height: 1.6;
 	font-size: 0.875em;
+	height: 100%
 }
 
 .mw-ui-container #userloginForm {
@@ -1025,6 +1027,10 @@ div.mw-createacct-benefits-container {
 	transition: color .4s, background-color .4s, border .4s;
 }
 
+#slider ul{
+	width: 180px;
+}
+
 #main #content .mw-htmlform-submit:active {
 	background-color: #009712;;
 }
@@ -1090,6 +1096,17 @@ td.mw-label{
 	background-color: #3a98fd;
 }
 
+#sitenotice {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+    text-align:center;
+    background-color: #f6f6e4;
+    border: 1px solid #e5e5e5;
+
+}
+
 @media screen and (max-width: 1157px){
 	#topSearch{
 		width: 30%;
@@ -1109,15 +1126,4 @@ td.mw-label{
 	#searchInput{
 		width: 65%;
 	}
-}
-
-#sitenotice {
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding-left: 10px;
-	padding-right:10px;
-	text-align:center;
-	background-color: #f6f6e4;
-	border: 1px solid #e5e5e5;
-
 }
