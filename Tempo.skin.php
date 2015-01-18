@@ -24,13 +24,10 @@ class SkinTempo extends SkinTemplate {
 	public function setupSkinUserCss( OutputPage $out ) {
 
 		parent::setupSkinUserCss( $out );
-		$baseModules = array();
-		$stylesOnly = array( 'skins.tempo' );
-		$scriptsOnly = array( 'skins.tempo.js' );
+		$baseModules = array( 'skins.tempo' );
 
-		$out->addModules( $baseModules );
-		$out->addModuleStyles( $stylesOnly );
-		$out->addModuleScripts( $scriptsOnly );
+		$out->addModuleStyles( $baseModules );
+		$out->addModuleScripts( $baseModules );
 
 	}
 
@@ -42,7 +39,7 @@ class SkinTempo extends SkinTemplate {
 
 
 	public function getNotifications() {
-		return '<li>' . $this->msg( 'tempo-nonotifications' ) . '</li>';
+		return '<li><p>' . $this->msg( 'tempo-nonotifications' ) . '</p></li>';
 	}
 
 	public function getHeadNavigation() {
@@ -107,7 +104,7 @@ class SkinTempo extends SkinTemplate {
         $top_search = '
                         <form id="bubble_search" name="search_site" action="' . $searchTitle->getFullURL() . '" method="get">
                                 <input type="text" id="searchInput" class="search_box" name="search" x-webkit-speech />
-                                <span id="arrow"></span><input type="submit" id="searchButton" class="search_button" value="' . $this->msg( 'searchbutton' ) . '"/>
+                                <input type="submit" id="searchButton" class="search_button mw-ui-button" value="' . $this->msg( 'searchbutton' ) . '"/>
                         </form>';
 
         return $top_search;

@@ -46,18 +46,10 @@ $wgResourceModules['skins.tempo'] = array(
 		'skins/Tempo/resources/tempo.css' => array( 'media' => 'screen' ),
 		'skins/Tempo/resources/printable.css' => array( 'media' => 'print' )
 	),
-	'position' => 'top'
-);
-
-// Main JS module for this skin
-$wgResourceModules['skins.tempo.js'] = array(
 	'scripts' => array(
-		'skins/Tempo/resources/js/tempo.js',
+		'skins/Tempo/resources/js/tempo.js' => array( 'media' => 'screen' )
 	),
-	'dependencies' => array(
-		'jquery.client',
-		'jquery.ui'
-	)
+	'position' => 'top'
 );
 
 $wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, &$skin ) {
