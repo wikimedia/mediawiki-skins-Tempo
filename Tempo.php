@@ -38,6 +38,7 @@ $wgExtensionCredits['skin'][] = array(
 $wgValidSkinNames['tempo'] = 'Tempo';
 
 $wgAutoloadClasses['SkinTempo'] = __DIR__ . '/Tempo.skin.php';
+$wgAutoloadClasses['NotificationsMenuTemplate'] = __DIR__ . '/templates/NotificationsMenu.tmpl.php';
 $wgMessagesDirs['SkinTempo'] = __DIR__ . '/i18n';
 
 // Main CSS ResourceLoader module

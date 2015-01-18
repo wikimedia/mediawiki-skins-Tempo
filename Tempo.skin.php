@@ -45,6 +45,11 @@ class SkinTempo extends SkinTemplate {
 	public function getHeadNavigation() {
 
 		$menu = array();
+		$linkAttributes = array();
+
+		if ( $this->getUser()->getNewtalk() ) {
+			$linkAttributes = array( 'class' => 'notif' );
+		}
 
 		if ( $this->getUser()->isAnon() ) {
 			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin'), $this->msg( 'pt-login' )->plain() );
@@ -55,10 +60,11 @@ class SkinTempo extends SkinTemplate {
 
 		$menu[] = $personalMenu;
 
-		$notifications = Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications' ), $this->msg( 'tempo-notifications' )->plain() ) .
-						 Html::openElement( 'ul' ) .  $this->getNotifications() . Html::closeElement( 'ul' );
+		$notifications = new NotificationsMenuTemplate( $this->getConfig() );
+		$notifications->set( 'user', $this->getUser() );
+		$notifications->set( 'newtalk', $this->getUser()->getNewtalk() );
 
-		$menu[] = $notifications;
+		$menu[] = $notifications->getHTML();
 
 		$userlinks = Html::openElement( 'ul' );
 		foreach ( $menu as $menuItem ) {
@@ -220,9 +226,8 @@ class TempoTemplate extends BaseTemplate {
 						</article>
 					</div>
 				</div>
-			</div>
-			<div id="bottom">
-				<footer>
+				<div id="bottom">
+					<footer>
 					<?php
 						foreach ( $this->getFooterLinks() as $category => $links ) { ?>
 									<ul>
@@ -236,7 +241,8 @@ class TempoTemplate extends BaseTemplate {
 					<?php
 								} 
 					?>
-				</footer>
+					</footer>
+				</div>
 			</div>
 		</div>
 	</body>

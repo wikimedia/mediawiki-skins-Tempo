@@ -6,7 +6,8 @@
 	"tempo-desc" : "A delightfully simple skin",
 	"tempo-myprofile" : "My Profile",
 	"tempo-notifications": "Notifications",
-	"tempo-nonotifications": "There are no notifications to show.",
+	"tempo-ribbon-nonewmessages": "You have no new messages",
+	"tempo-ribbon-newmessages": "You have new messages",
 	"tempo-hello": "Hello, $1",
 	"tempo-guest": "Guest"
 }
