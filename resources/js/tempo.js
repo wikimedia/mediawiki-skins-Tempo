@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#searchBox').on( 'click', function() {
-		$('#searchBox').attr( 'placeholder', '' );
+	$('#searchButton').on( 'click', function() {
+		$('#searchButton').css( 'background-color', '#627756' );
 	});
 });

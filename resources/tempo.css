@@ -451,6 +451,26 @@ html, body {
 	overflow-x: hidden;
 }
 
+table{
+
+}
+
+td select{
+	margin-bottom: 10px;
+}
+
+td label{
+	margin-right: 5px;
+}
+
+input[type="submit"]{
+	line-height: inherit;
+}
+
+input[type="radio"]{
+	margin: 0 2px;
+}
+
 a {
 	color:#505f4c;
 	text-decoration:none;
@@ -562,10 +582,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #searchButton {
+	padding: 0;
 	color: #fafafa;
 	background-color: #6d855e;
 	border: 0;
-	height: 26px;
+	height: 27px;
 	line-height: 23px;
 	margin-left: 5px;
 	/*right: 5px;
@@ -704,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid #b9cdb5;
 }
 
-#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li a {
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li a, #top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li p {
 	display: block;
 	padding: 0 20px 0 15px;
 	line-height: 26px;
@@ -1031,6 +1052,42 @@ a.text {
 
 article .new {
 	color: #7F0000 !important;
+}
+
+td.mw-label{
+	text-align: left;
+	width: 230px !important;
+}
+
+.mw-htmlform-field-HTMLIntField{
+	height: 30px;
+}
+
+.mw-htmlform-nolabel td.mw-label{
+	width: 0 !important;
+}
+
+#main #content .mw-htmlform-submit{
+	background-color: steelblue;
+	padding: 5px 10px;
+}
+
+#main #content .mw-htmlform-submit:hover{
+	background-color: #3a98fd;
+}
+
+.editButtons input[type="submit"]{
+	color: white;
+	background-color: steelblue;
+	padding: 5px 10px;
+	border-style: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.editButtons input[type="submit"]:hover{
+	background-color: #3a98fd;
 }
 
 @media screen and (max-width: 1157px){
