@@ -130,13 +130,11 @@ class TempoTemplate extends BaseTemplate {
 
 	public function execute() {
 		$skin = $this->getSkin();
-
+		$this->html( 'headelement' );
 ?>
-<!DOCTYPE html>
-	<?php echo $skin->getOutput()->headElement( $skin ); ?>
 	<body>
 		<div id="container">
-			<div id="top">
+			<div id="top" class="noprint">
 				<div id="topnav">
 					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
@@ -147,7 +145,7 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 
-				<div id="rail">
+				<div id="rail" class="noprint">
 					<div id="sidebar">
 						<?php
 							foreach ( $this->getSidebar() as $boxName => $box ) { ?>
@@ -182,7 +180,7 @@ class TempoTemplate extends BaseTemplate {
 					<?php
 						}
 					?>
-					<div id="navtabs"><ul class="tabsleft">
+					<div id="navtabs" class="noprint"><ul class="tabsleft">
 											<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
 														echo $this->makeListItem( $key, $item );
 												}
@@ -203,7 +201,7 @@ class TempoTemplate extends BaseTemplate {
 						</article>
 					</div>
 				</div>
-				<div id="bottom">
+				<div id="bottom" class="noprint">
 					<footer>
 					<?php
 						foreach ( $this->getFooterLinks() as $category => $links ) { ?>
