@@ -18,6 +18,8 @@ class SkinTempo extends SkinTemplate {
 
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
+		$jsModules = array( 'skins.tempo.js' );
+		$out->addModuleScripts( $jsModules );
 	}
 
 	public function setupSkinUserCss( OutputPage $out ) {
@@ -25,10 +27,7 @@ class SkinTempo extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 
 		$cssModules = array( 'skins.tempo' );
-		$jsModules = array( 'skins.tempo.js' );
-
 		$out->addModuleStyles( $cssModules );
-		$out->addModuleStyles( $jsModules );
 	}
 
 	public function getHeadNavigation() {
@@ -179,6 +178,7 @@ class TempoTemplate extends BaseTemplate {
 							<div id="sitenotice"><?php echo $this->html( 'sitenotice' ) ?></div>
 					<?php
 						}
+
 					?>
 					<div id="navtabs" class="noprint"><ul class="tabsleft">
 											<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
