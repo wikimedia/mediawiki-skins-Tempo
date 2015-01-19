@@ -47,22 +47,11 @@ $wgResourceModules['skins.tempo'] = array(
 		'skins/Tempo/resources/tempo.css' => array( 'media' => 'screen' ),
 		'skins/Tempo/resources/printable.css' => array( 'media' => 'print' )
 	),
-	'scripts' => array(
-		'skins/Tempo/resources/js/tempo.js' => array( 'media' => 'screen' )
-	),
-	'dependencies' => array(
-		'jquery.ui.core'
-	),
 	'position' => 'top'
 );
 
-$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, &$skin ) {
-
-	if ( get_class( $skin ) !== 'SkinTempo' ) {
-		return true;
-	}
-
-	$out->addMeta( 'http:content-type', 'text/html; charset=UTF-8' );
-
-	return true;
-};
+$wgResourceModules['skins.tempo.js'] = array(
+	'scripts' => array(
+		'skins/Tempo/resources/js/tempo.js'
+	)
+);

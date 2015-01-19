@@ -18,28 +18,17 @@ class SkinTempo extends SkinTemplate {
 
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$this->loadSidebarSections();
 	}
 
 	public function setupSkinUserCss( OutputPage $out ) {
 
 		parent::setupSkinUserCss( $out );
-		$baseModules = array( 'skins.tempo' );
 
-		$out->addModuleStyles( $baseModules );
-		$out->addModuleScripts( $baseModules );
+		$cssModules = array( 'skins.tempo' );
+		$jsModules = array( 'skins.tempo.js' );
 
-	}
-
-	public function loadSidebarSections() {
-		wfRunHooks( 'LoadSidebarSectionsBefore' );
-		$this->addDefaultSidebarItems();
-		wfRunHooks( 'LoadSidebarSectionsAfter' );
-	}
-
-
-	public function getNotifications() {
-		return '<li><p>' . $this->msg( 'tempo-nonotifications' ) . '</p></li>';
+		$out->addModuleStyles( $cssModules );
+		$out->addModuleStyles( $jsModules );
 	}
 
 	public function getHeadNavigation() {
@@ -91,18 +80,6 @@ class SkinTempo extends SkinTemplate {
 		} else {
 			return $actions;
 		}
-	}
-
-	public function addDefaultSidebarItems() {
-
-	}
-	public function addSidebarItem($title, $editable = false, $editlink = '', $content) {
-		array_push( $this->mSidebarSections, 
-						array(
-							'title' => $title,
-							'content' => $content 
-						)
-				);
 	}
 
 	public function getSearchForm() {
@@ -264,5 +241,3 @@ class TempoTemplate extends BaseTemplate {
 
 	}
 }
-
-
