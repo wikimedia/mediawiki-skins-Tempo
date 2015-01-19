@@ -677,7 +677,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.ribbon {
-	color: #fff !important;
+	color: #f6f7f6 !important;
 }
 
 #top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul > li:hover a {
