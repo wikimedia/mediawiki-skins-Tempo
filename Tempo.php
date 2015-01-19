@@ -50,6 +50,9 @@ $wgResourceModules['skins.tempo'] = array(
 	'scripts' => array(
 		'skins/Tempo/resources/js/tempo.js' => array( 'media' => 'screen' )
 	),
+	'dependencies' => array(
+		'jquery.ui.core'
+	),
 	'position' => 'top'
 );
 
