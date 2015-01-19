@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Imperadeiro90"
+		]
+	},
+	"tempo-myprofile": "O Meu Perfil",
+	"tempo-notifications": "Notificações",
+	"tempo-ribbon-nonewmessages": "Não tem mensagens novas",
+	"tempo-ribbon-newmessages": "Tem mensagens novas",
+	"tempo-hello": "Olá, $1",
+	"tempo-guest": "Convidado"
+}

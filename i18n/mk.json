@@ -7,6 +7,8 @@
 	"tempo-desc": "Едноставно и убаво руво",
 	"tempo-myprofile": "Мојот профил",
 	"tempo-notifications": "Известувања",
+	"tempo-ribbon-nonewmessages": "Немате нови пораки.",
+	"tempo-ribbon-newmessages": "Имате нови пораки",
 	"tempo-hello": "Здраво, $1",
 	"tempo-guest": "Гостин"
 }

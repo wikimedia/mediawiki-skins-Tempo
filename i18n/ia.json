@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"tempo-desc": "Un apparentia deliciosemente simple",
+	"tempo-myprofile": "Mi profilo",
+	"tempo-notifications": "Notificationes",
+	"tempo-ribbon-nonewmessages": "Tu non ha nove messages",
+	"tempo-ribbon-newmessages": "Tu ha nove messages",
+	"tempo-hello": "Hallo, $1",
+	"tempo-guest": "persona incognite"
+}
