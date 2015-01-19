@@ -12,7 +12,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 class SkinTempo extends SkinTemplate {
 
 	public $skinname = 'tempo', $stylename = 'tempo',
-		$template = 'TempoTemplate', $useHeadElement = true;
+		$template = 'TempoTemplate';
 
 	public $mSidebarSections = array();
 
