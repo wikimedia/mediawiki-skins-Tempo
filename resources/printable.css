@@ -1,9 +1,0 @@
-@charset "UTF-8"
-@media print {
-
-#top, #navtabs, #rail {
-	display: none;
-	visbility: hidden;
-}
-
-}

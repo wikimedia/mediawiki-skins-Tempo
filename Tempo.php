@@ -45,7 +45,7 @@ $wgMessagesDirs['SkinTempo'] = __DIR__ . '/i18n';
 $wgResourceModules['skins.tempo'] = array(
 	'styles' => array(
 		'skins/Tempo/resources/tempo.css' => array( 'media' => 'screen' ),
-		'skins/Tempo/resources/printable.css' => array( 'media' => 'print' )
+		'skins/Tempo/resources/normalize.css' => array( 'media' => 'screen' )
 	),
 	'position' => 'top'
 );
