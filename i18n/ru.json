@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"tempo-desc": "Восхитительно простая тема оформления",
+	"tempo-myprofile": "Мой профиль",
+	"tempo-notifications": "Уведомления",
+	"tempo-ribbon-nonewmessages": "У вас нет новых сообщений",
+	"tempo-ribbon-newmessages": "У вас есть новые сообщения",
+	"tempo-hello": "Здравствуйте, $1",
+	"tempo-guest": "Гость"
+}
