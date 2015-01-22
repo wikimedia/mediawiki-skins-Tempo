@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"tempo-desc": "Một giao diện đơn giản thú vị",
+	"tempo-myprofile": "Trang của tôi",
+	"tempo-notifications": "Thông báo",
+	"tempo-ribbon-nonewmessages": "Bạn không có tin nhắn mới",
+	"tempo-ribbon-newmessages": "Bạn có tin nhắn mới",
+	"tempo-hello": "Xin chào $1",
+	"tempo-guest": "Khách"
+}
