@@ -1,9 +1,9 @@
 {
         "@metadata": {
-                "authors": []
+                "authors": [ "Lojjik Braughler" ]
         },
 
-	"tempo-desc" : "A delightfully simple skin",
+	"tempo-desc" : "A clean, distinct, and simple skin",
 	"tempo-myprofile" : "My Profile",
 	"tempo-notifications": "Notifications",
 	"tempo-ribbon-nonewmessages": "You have no new messages",
