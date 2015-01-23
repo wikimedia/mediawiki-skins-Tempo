@@ -9,4 +9,4 @@ Add require_once("$IP/skins/Tempo/Tempo.php"); to your LocalSettings.php
 
 Change $wgDefaultSkin to 'tempo' in LocalSettings.php
 
-![screenshot](http://img.lojjikbraughler.com/tempo3.png)
+![screenshot](http://img.lojjikbraughler.com/tempo4.png)
