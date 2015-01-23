@@ -9,5 +9,6 @@
 	"tempo-notifications": "Паведамленьні",
 	"tempo-ribbon-nonewmessages": "У вас няма новых паведамленьняў",
 	"tempo-ribbon-newmessages": "Вы маеце новыя паведамленьні",
-	"tempo-hello": "Вітаем, $1"
+	"tempo-hello": "Вітаем, $1",
+	"tempo-guest": "госьць"
 }
