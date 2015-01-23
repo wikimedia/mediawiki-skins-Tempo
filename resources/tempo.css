@@ -660,8 +660,11 @@ td.mw-label{
 	width: 0 !important;
 }
 
-#main #content .mw-htmlform-submit{
+.mw-ui-button.mw-ui-progressive, .mw-ui-button.mw-ui-primary {
 	background-color: steelblue;
+	border: 1px solid steelblue;
+}
+#main #content .mw-htmlform-submit, .mw-ui-progressive {
 	padding: 5px 10px;
 }
 
