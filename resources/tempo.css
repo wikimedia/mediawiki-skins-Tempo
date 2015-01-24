@@ -19,10 +19,6 @@ html, body {
 
 }
 
-table{
-
-}
-
 td select{
 	margin-bottom: 10px;
 }
@@ -64,7 +60,7 @@ dt {
 	margin-bottom: .1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
 	color: #000;
 	background: none;
 	font-weight: normal;
@@ -197,7 +193,7 @@ QmCC);
 	border: 0;
 	background-color: transparent;
 	color: transparent;
-	margin-left: -30px;
+	margin-left: -24px;
 	line-height: 0px;
 	display: inline-block;
 	position: relative;
@@ -347,12 +343,12 @@ a.ribbon {
 }
 
 #sidebar section .top {
-	border-radius: 2px;
 	border-bottom:1px solid #92a583;
 	width:100%;
 }
 
 #sidebar section .top h3 {
+	font-weight: normal;
 	display:inline;
 	vertical-align:top;
 }
