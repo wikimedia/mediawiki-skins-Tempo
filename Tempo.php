@@ -29,7 +29,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Tempo',
-	'version' => '1.5',
+	'version' => '1.6rc1',
 	'author' => array( 'Lojjik Braughler' ),
 	'descriptionmsg' => 'tempo-desc',
 	'license-name' => 'CC0 1.0'

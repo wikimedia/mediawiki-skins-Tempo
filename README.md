@@ -1,7 +1,12 @@
-# mediawiki-skins-Tempo
+# Tempo
 A calm, clean, distinct, and readable skin for MediaWiki.
 
-Please note that this skin is still in beta phase and may be prone to bugs.
+#Release status
+This skin is almost ready for production use, with some caveats:
+
+* There is no mobile skin available
+* The skin might not be compatible with all browsers
+* There are still upcoming UX changes
 
 To install, clone this repository into your skins directory in a folder called "Tempo".
 
