@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin0van0der0vliet"
+		]
+	},
+	"tempo-myprofile": "Mijn profiel",
+	"tempo-notifications": "Meldingen",
+	"tempo-hello": "Hallo, $1",
+	"tempo-guest": "Gast"
+}

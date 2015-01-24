@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Imperadeiro90"
+			"Imperadeiro90",
+			"Vitorvicentevalente"
 		]
 	},
+	"tempo-desc": "Um tema limpo, distinto e simples",
 	"tempo-myprofile": "O Meu Perfil",
 	"tempo-notifications": "Notificações",
 	"tempo-ribbon-nonewmessages": "Não tem mensagens novas",

@@ -4,9 +4,11 @@
 			"Robby"
 		]
 	},
-	"tempo-desc": "En einfache Benozerinterface",
+	"tempo-desc": "En einfache Benotzerinterface",
 	"tempo-myprofile": "Mäi Profil",
 	"tempo-notifications": "Notifikatiounen",
+	"tempo-ribbon-nonewmessages": "Dir hutt keng nei Messagen",
+	"tempo-ribbon-newmessages": "Dir hutt nei Messagen",
 	"tempo-hello": "Bonjour $1",
 	"tempo-guest": "Gaascht"
 }
