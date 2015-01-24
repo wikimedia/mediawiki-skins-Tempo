@@ -74,11 +74,15 @@ class SkinTempo extends SkinTemplate {
 		unset($actions['unwatch']);
 		unset($views['view']);
 
+		// left side
+
 		if ( $side === 'left' ) {
 			return array_merge( $namespaces, $views );
-		} else {
-			return $actions;
 		}
+
+		// right side
+
+		return $actions;
 	}
 
 	public function getSearchForm() {
