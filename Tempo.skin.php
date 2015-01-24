@@ -83,11 +83,10 @@ class SkinTempo extends SkinTemplate {
 
 	public function getSearchForm() {
 		$searchTitle = SpecialPage::getTitleFor( 'Search' );
-        $top_search = '
-                        <form id="bubble_search" name="search_site" action="' . $searchTitle->getFullURL() . '" method="get">
-                                <input type="text" id="searchInput" class="search_box" name="search" x-webkit-speech />
-                                <input type="submit" id="searchButton" value="Search" />
-                        </form>';
+        $top_search = Html::openElement( 'form', array( 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ) .
+                                Html::openElement( 'input', array( 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ) ) .
+                                Html::openElement( 'input', array( 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ) ) . 
+                        Html::closeElement( 'form' );
 
         return $top_search;
 	}
