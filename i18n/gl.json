@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"tempo-desc": "Unha aparencia limpa, distinta e sinxela",
+	"tempo-myprofile": "O meu perfil",
+	"tempo-notifications": "Notificacións",
+	"tempo-ribbon-nonewmessages": "Non ten mensaxes novas",
+	"tempo-ribbon-newmessages": "Ten mensaxes novas",
+	"tempo-hello": "Ola, $1",
+	"tempo-guest": "convidado"
+}
