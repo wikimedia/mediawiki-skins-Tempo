@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Orikrin1998"
+			"Orikrin1998",
+			"Linedwell"
 		]
 	},
 	"tempo-desc": "Une apparence propre, nette et simple",
-	"tempo-notifications": "Notifications"
+	"tempo-myprofile": "Mon profil",
+	"tempo-notifications": "Notifications",
+	"tempo-ribbon-nonewmessages": "Vous n’avez aucun nouveau message",
+	"tempo-ribbon-newmessages": "Vous avez de nouveaux messages",
+	"tempo-hello": "Bonjour, $1",
+	"tempo-guest": "Invité"
 }
