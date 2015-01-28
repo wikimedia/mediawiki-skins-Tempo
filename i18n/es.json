@@ -1,12 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido",
+			"Kroji"
 		]
 	},
-	"tempo-desc": "Una apariencia maravillosamente simple",
+	"tempo-desc": "Un tema diferente, simple y limpio",
 	"tempo-myprofile": "Mi perfil",
 	"tempo-notifications": "Notificaciones",
+	"tempo-ribbon-nonewmessages": "No tienes mensajes nuevos",
+	"tempo-ribbon-newmessages": "Tienes mensajes nuevos",
 	"tempo-hello": "Hola, $1",
 	"tempo-guest": "Invitado"
 }
