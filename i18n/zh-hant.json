@@ -4,5 +4,9 @@
 			"Liuxinyu970226"
 		]
 	},
-	"tempo-hello": "您好，$1"
+	"tempo-notifications": "通知",
+	"tempo-ribbon-nonewmessages": "你沒有新訊息",
+	"tempo-ribbon-newmessages": "您有新訊息",
+	"tempo-hello": "您好，$1",
+	"tempo-guest": "訪客"
 }
