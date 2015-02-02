@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McSalama"
+		]
+	},
+	"tempo-desc": "Puhdas, selkeä ja yksinkertainen teema",
+	"tempo-myprofile": "Profiili",
+	"tempo-notifications": "Ilmoitukset",
+	"tempo-ribbon-nonewmessages": "Ei uusia viestejä",
+	"tempo-ribbon-newmessages": "Sinulle on uusia viestejä",
+	"tempo-hello": "Hei, $1",
+	"tempo-guest": "Vieras"
+}

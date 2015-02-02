@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aktron",
+			"Juandev"
+		]
+	},
+	"tempo-desc": "Čistý, přehledný a jednoduchý skin.",
+	"tempo-myprofile": "Můj profil",
+	"tempo-notifications": "Upozornění",
+	"tempo-ribbon-nonewmessages": "Nemáte žádné nové zprávy",
+	"tempo-ribbon-newmessages": "Máte nové zprávy",
+	"tempo-hello": "Vítej, $1",
+	"tempo-guest": "Host"
+}
