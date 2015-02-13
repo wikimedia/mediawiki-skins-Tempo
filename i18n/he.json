@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Yona b"
 		]
 	},
-	"tempo-desc": "עיצוב נפלא בפשטותו",
+	"tempo-desc": "עיצוב נקיא ופשוט",
 	"tempo-myprofile": "הפרופיל שלי",
 	"tempo-notifications": "הודעות",
+	"tempo-ribbon-nonewmessages": "אין לך הודעות חדשות",
+	"tempo-ribbon-newmessages": "יש לך הודעות חדשות",
 	"tempo-hello": "שלום, $1",
 	"tempo-guest": "אורח"
 }
