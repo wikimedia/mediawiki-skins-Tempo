@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"tempo-desc": "Una skin pulita, definita e semplice",
+	"tempo-myprofile": "Il mio profilo",
+	"tempo-notifications": "Notifiche",
+	"tempo-ribbon-nonewmessages": "Non hai nuovi messaggi",
+	"tempo-ribbon-newmessages": "Hai nuovi messaggi",
+	"tempo-hello": "Ciao, $1",
+	"tempo-guest": "Ospite"
+}
