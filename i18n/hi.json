@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siddhartha Ghai"
+		]
+	},
+	"tempo-notifications": "अधिसूचनाएँ",
+	"tempo-ribbon-nonewmessages": "आपके लिए कोई नए सन्देश नहीं हैं",
+	"tempo-ribbon-newmessages": "आपके लिए नए सन्देश हैं",
+	"tempo-hello": "नमस्कार, $1",
+	"tempo-guest": "अतिथि"
+}
