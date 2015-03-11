@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"tempo-myprofile": "Мој профил",
+	"tempo-ribbon-nonewmessages": "Немате нових порука",
+	"tempo-ribbon-newmessages": "Имате нове поруке",
+	"tempo-hello": "Здраво, $1"
+}
