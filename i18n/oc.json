@@ -4,5 +4,11 @@
 			"Cedric31"
 		]
 	},
-	"tempo-desc": "Una aparéncia clara, neta e simpla"
+	"tempo-desc": "Una aparéncia clara, neta e simpla",
+	"tempo-myprofile": "Mon perfil",
+	"tempo-notifications": "Notificacions",
+	"tempo-ribbon-nonewmessages": "Avètz pas cap de messatge novèl",
+	"tempo-ribbon-newmessages": "Avètz de messatges novèls",
+	"tempo-hello": "Bonjorn, $1",
+	"tempo-guest": "Convidat"
 }
