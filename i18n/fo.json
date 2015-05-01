@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"EileenSanda"
+		]
+	},
+	"tempo-myprofile": "Mín vangamynd",
+	"tempo-notifications": "Fráboðanir",
+	"tempo-ribbon-nonewmessages": "Tú hevur ongi nýggj boð",
+	"tempo-ribbon-newmessages": "Tú hevur nýggj boð",
+	"tempo-hello": "Hey, $1",
+	"tempo-guest": "Gestur"
+}
