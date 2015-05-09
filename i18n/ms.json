@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"tempo-desc": "Rupa yang kemas, ringkas dan tersendiri",
+	"tempo-myprofile": "Profil Saya",
+	"tempo-notifications": "Pemberitahuan",
+	"tempo-ribbon-nonewmessages": "Anda tiada pesanan baru",
+	"tempo-ribbon-newmessages": "Anda ada pesanan baru",
+	"tempo-hello": "Helo, $1",
+	"tempo-guest": "Tetamu"
+}

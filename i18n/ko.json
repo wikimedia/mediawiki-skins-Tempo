@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"아라"
+		]
+	},
+	"tempo-desc": "깨끗하고, 뚜렷하고, 단순한 스킨",
+	"tempo-myprofile": "내 프로필",
+	"tempo-notifications": "알림",
+	"tempo-ribbon-nonewmessages": "새 메시지가 없습니다",
+	"tempo-ribbon-newmessages": "새 메시지가 있습니다",
+	"tempo-hello": "안녕하세요, $1님",
+	"tempo-guest": "손님"
+}
