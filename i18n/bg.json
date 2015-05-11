@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"DCLXVI"
+		]
+	},
+	"tempo-myprofile": "Моят профил",
+	"tempo-notifications": "Известия",
+	"tempo-ribbon-nonewmessages": "Нямате нови съобщения",
+	"tempo-ribbon-newmessages": "Имате нови съобщения",
+	"tempo-hello": "Здравейте, $1",
+	"tempo-guest": "Гост"
+}
