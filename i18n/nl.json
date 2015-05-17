@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin0van0der0vliet"
+			"Robin0van0der0vliet",
+			"Siebrand"
 		]
 	},
+	"tempo-desc": "Een schoon, duidelijk en eenvoudig uiterlijk",
 	"tempo-myprofile": "Mijn profiel",
 	"tempo-notifications": "Meldingen",
+	"tempo-ribbon-nonewmessages": "U hebt geen nieuwe berichten",
+	"tempo-ribbon-newmessages": "U hebt nieuwe berichten",
 	"tempo-hello": "Hallo, $1",
 	"tempo-guest": "Gast"
 }
