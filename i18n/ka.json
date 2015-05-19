@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"MIKHEIL"
+			"MIKHEIL",
+			"David1010"
 		]
 	},
 	"tempo-myprofile": "ჩემი პროფილი",
 	"tempo-notifications": "შეტყობინებები",
+	"tempo-ribbon-nonewmessages": "თქვენ არ გაქვთ ახალი შეტყობინება",
+	"tempo-ribbon-newmessages": "თქვენ ახალი შეტყობინება გაქვთ",
 	"tempo-hello": "გამარჯობა, $1",
 	"tempo-guest": "სტუმარი"
 }
