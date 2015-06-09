@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"tempo-myprofile": "Profilom",
+	"tempo-notifications": "Értesítések",
+	"tempo-ribbon-nonewmessages": "Nincsenek új üzeneteid",
+	"tempo-ribbon-newmessages": "Új üzeneteid vannak",
+	"tempo-hello": "Helló, $1!",
+	"tempo-guest": "Vendég"
+}
