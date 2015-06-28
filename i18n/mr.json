@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Suyog"
+		]
+	},
+	"tempo-ribbon-nonewmessages": "काही नवीन संदेश नाहीत",
+	"tempo-ribbon-newmessages": "तुमच्यासाठी नवीन संदेश आहेत",
+	"tempo-hello": "नमस्कार, $1",
+	"tempo-guest": "पाहूणा"
+}
