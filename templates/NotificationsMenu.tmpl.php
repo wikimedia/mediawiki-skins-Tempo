@@ -9,26 +9,25 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	private $output;
 	const MAX_NOTES = 5;
 
-	private function echoInstalled() {
-			return class_exists( 'ApiEchoNotifications' ) && class_exists( 'MWEchoNotifUser' );
+	private function isEchoInstalled() {
+		return class_exists( 'ApiEchoNotifications' ) && class_exists( 'MWEchoNotifUser' );
 	}
 
 	private function addEchoNotifications() {
-			$notifications = ApiEchoNotifications::getNotifications( $this->data['user'], 'html', self::MAX_NOTES );
-			$output = '';
+		$notifications = ApiEchoNotifications::getNotifications( $this->data['user'], 'html', self::MAX_NOTES );
+		$output = '';
 
-			if ( $notifications ) {
-				foreach ( $notifications as $note ) {
-					$output .= $note['*'];
-				}
+		if ( $notifications ) {
+			foreach ( $notifications as $note ) {
+				$output .= $note['*'];
 			}
+		}
 
-			$this->output .= $output;
+		$this->output .= $output;
 	}
 
 	public function hasNotifications() {
-
-		if ( $this->echoInstalled() ) {
+		if ( $this->isEchoInstalled() ) {
 			$notifUser = MWEchoNotifUser::newFromUser( $this->data['user'] );
 			return $notifUser->getNotificationCount( false ) >= 1;
 		}
@@ -37,27 +36,23 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	}
 
 	public function addRibbon() {
-
 		$ribbonClass = 'ribbon';
 
 		if ( $this->data['newtalk'] ) {
 			$ribbonMessage = wfMessage( 'tempo-ribbon-newmessages' );
 			$ribbonClass .= ' unread';
-
 		} else {
 			$ribbonMessage = wfMessage( 'tempo-ribbon-nonewmessages' );
 			$ribbonClass .= ' read';
 		}
 
-		$this->output .= Html::openElement( 'li' ) . 
-						Linker::link( $this->data['user']->getTalkPage(), $ribbonMessage, array( 'class' => $ribbonClass ) ); 
-					 Html::closeElement( 'li' );
-
+		$this->output .= Html::openElement( 'li' ) .
+						Linker::link( $this->data['user']->getTalkPage(), $ribbonMessage, array( 'class' => $ribbonClass ) );
+					Html::closeElement( 'li' );
 	}
 
 	public function execute() {
-
-		if ( $this->echoInstalled() ) {
+		if ( $this->isEchoInstalled() ) {
 			$this->addEchoNotifications();
 		} else {
 			$this->addRibbon();
@@ -72,8 +67,8 @@ class NotificationsMenuTemplate extends BaseTemplate {
 		$linkClass = '';
 	}
 
-	if ( $this->echoInstalled() ) {
-		echo Linker::link( SpecialPage::getTitleFor( 'Notifications' ), wfMessage('tempo-notifications' )->plain(), array( 'class' => $linkClass ) );
+	if ( $this->isEchoInstalled() ) {
+		echo Linker::link( SpecialPage::getTitleFor( 'Notifications' ), wfMessage( 'tempo-notifications' )->plain(), array( 'class' => $linkClass ) );
 	} else {
 		echo Html::rawElement( 'a', array( 'href' => '#', 'class' => $linkClass ), wfMessage( 'tempo-notifications' )->plain() );
 	}
@@ -85,9 +80,6 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	?>
 </ul>
 <?php
+	}
 
 }
-
-}
-
-
