@@ -16,6 +16,15 @@ class SkinTempo extends SkinTemplate {
 
 	public $mSidebarSections = array();
 
+	/**
+	 * @var Config
+	 */
+	private $tempoConfig;
+
+	public function __construct() {
+		$this->tempoConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'tempo' );
+	}
+
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 		$jsModules = array( 'skins.tempo.js' );
@@ -27,6 +36,13 @@ class SkinTempo extends SkinTemplate {
 
 		$cssModules = array( 'skins.tempo' );
 		$out->addModuleStyles( $cssModules );
+	}
+
+	/**
+	 * Override to pass our Config instance to it
+	 */
+	public function setupTemplate( $classname, $repository = false, $cache_dir = false ) {
+		return new $classname( $this->tempoConfig );
 	}
 
 	public function getHeadNavigation() {

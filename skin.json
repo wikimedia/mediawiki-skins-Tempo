@@ -1,0 +1,51 @@
+{
+	"name": "Tempo",
+	"version": "1.6rc1",
+	"author": [
+		"Lojjik Braughler"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Tempo",
+	"descriptionmsg": "tempo-desc",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"ConfigRegistry": {
+		"tempo": "GlobalVarConfig::newInstance"
+	},
+	"ValidSkinNames": {
+		"tempo": "Tempo"
+	},
+	"MessagesDirs": {
+		"SkinTempo": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NotificationsMenuTemplate": "templates/NotificationsMenu.tmpl.php",
+		"SkinTempo": "Tempo.skin.php",
+		"TempoTemplate": "Tempo.skin.php"
+	},
+	"ResourceModules": {
+		"skins.tempo": {
+			"position": "top",
+			"styles": {
+				"resources/tempo.css": {
+					"media": "screen"
+				},
+				"resources/normalize.css": {
+					"media": "screen"
+				}
+			}
+		},
+		"skins.tempo.js": {
+			"position": "bottom",
+			"scripts": [
+				"resources/js/tempo.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Tempo"
+	},
+	"manifest_version": 1
+}
