@@ -23,7 +23,6 @@ class SkinTempo extends SkinTemplate {
 	}
 
 	public function setupSkinUserCss( OutputPage $out ) {
-
 		parent::setupSkinUserCss( $out );
 
 		$cssModules = array( 'skins.tempo' );
@@ -31,7 +30,6 @@ class SkinTempo extends SkinTemplate {
 	}
 
 	public function getHeadNavigation() {
-
 		$menu = array();
 		$linkAttributes = array();
 
@@ -40,7 +38,7 @@ class SkinTempo extends SkinTemplate {
 		}
 
 		if ( $this->getUser()->isAnon() ) {
-			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin'), $this->msg( 'pt-login' )->plain() );
+			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin' ), $this->msg( 'pt-login' )->plain() );
 		} else {
 			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), $this->msg( 'tempo-myprofile' ) ) .
 							Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
@@ -60,7 +58,6 @@ class SkinTempo extends SkinTemplate {
 		}
 
 		return $userlinks;
-
 	}
 
 	public function getTabs( $side = 'left' ) {
@@ -70,43 +67,41 @@ class SkinTempo extends SkinTemplate {
 		$actions = $content_navigation['actions'];
 		$views = $content_navigation['views'];
 
-		unset($actions['watch']);
-		unset($actions['unwatch']);
-		unset($views['view']);
+		unset( $actions['watch'] );
+		unset( $actions['unwatch'] );
+		unset( $views['view'] );
 
 		// left side
-
 		if ( $side === 'left' ) {
 			return array_merge( $namespaces, $views );
 		}
 
 		// right side
-
 		return $actions;
 	}
 
 	public function getSearchForm() {
 		$searchTitle = SpecialPage::getTitleFor( 'Search' );
-        $top_search = Html::openElement( 'form', array( 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ) ) .
-                                Html::openElement( 'input', array( 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ) ) .
-                                Html::openElement( 'input', array( 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ) ) . 
-                        Html::closeElement( 'form' );
+		$top_search = Html::openElement( 'form', array( 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ) ) .
+								Html::openElement( 'input', array( 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ) ) .
+								Html::openElement( 'input', array( 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ) ) .
+						Html::closeElement( 'form' );
 
-        return $top_search;
+		return $top_search;
 	}
+
 	public function getSidebarItems() {
 		$sidebar_html = '';
 
-		foreach( $this->mSidebarSections as $sidebarItem ) {
+		foreach ( $this->mSidebarSections as $sidebarItem ) {
 			$sidebar_html .= Html::openElement( 'section' );
 			$sidebar_html .= Html::openElement( 'div', array( 'class' => 'top' ) );
-			$sidebar_html .= Html::openElement( 'h3' ) . $sidebarItem['title'] . Html::closeElement('h3');
+			$sidebar_html .= Html::openElement( 'h3' ) . $sidebarItem['title'] . Html::closeElement( 'h3' );
 			$sidebar_html .= Html::closeElement( 'div' );
 			$sidebar_html .= $sidebarItem['content'];
 			$sidebar_html .= Html::closeElement( 'section' );
-
 		}
-		
+
 		return $sidebar_html;
 	}
 
@@ -115,17 +110,17 @@ class SkinTempo extends SkinTemplate {
 
 		if ( $user->isAnon() ) {
 			return $this->msg( 'tempo-guest' );
-		} 
-		
+		}
+
 		$realName = $user->getRealName();
 
 		if ( !empty( $realName ) ) {
-				return $realName;
+			return $realName;
 		}
 
 		return $user->getName();
 	}
-	
+
 }
 
 class TempoTemplate extends BaseTemplate {
@@ -157,20 +152,19 @@ class TempoTemplate extends BaseTemplate {
 										<?php if ( is_array( $box['content'] ) ) { ?>
 											<ul>
 												<?php
-														foreach ( $box['content'] as $key => $item ) {
-															echo $this->makeListItem( $key, $item );
-														}
+													foreach ( $box['content'] as $key => $item ) {
+														echo $this->makeListItem( $key, $item );
+													}
 												?>
 													</ul>
 												<?php
-													} else {
-														echo $box['content'];
-													}
-
-											?> 
-										</section> 
+												} else {
+													echo $box['content'];
+												}
+											?>
+										</section>
 										<?php
-												} 
+							}
 						?>
 					</div>
 				</div>
@@ -183,22 +177,24 @@ class TempoTemplate extends BaseTemplate {
 						}
 
 					?>
-					<div id="navtabs" class="noprint"><ul class="tabsleft">
-											<?php foreach( $skin->getTabs( 'left' ) as $key => $item ) {
-														echo $this->makeListItem( $key, $item );
-												}
-											?>
-
-										</ul>
-									   	<ul class="tabsright">
-									   		<?php foreach( $skin->getTabs( 'right' ) as $key => $item ) {
-									   					echo $this->makeListItem( $key, $item );
-									   			}
-									   		?>
-									   	</ul>
+					<div id="navtabs" class="noprint">
+						<ul class="tabsleft">
+						<?php
+							foreach ( $skin->getTabs( 'left' ) as $key => $item ) {
+								echo $this->makeListItem( $key, $item );
+							}
+						?>
+						</ul>
+						<ul class="tabsright">
+						<?php
+							foreach ( $skin->getTabs( 'right' ) as $key => $item ) {
+								echo $this->makeListItem( $key, $item );
+							}
+						?>
+						</ul>
 					</div>
 					<div id="content">
-						<h1><?php $this->html('title') ?></h1>
+						<h1><?php $this->html( 'title' ) ?></h1>
 						<article>
 							<?php $this->html( 'bodytext' ) ?>
 						</article>
@@ -213,20 +209,20 @@ class TempoTemplate extends BaseTemplate {
 											foreach ( $links as $key ) { ?>
 												<li><?php $this->html( $key ) ?></li>
 										<?php
-											} 
+											}
 										?>
 									</ul>
 					<?php
-								} 
+						}
 					?>
 						<ul>
 							<?php
 								foreach ( $this->getFooterIcons( 'icononly' ) as $blockName => $footerIcons ) { ?>
 									<li>
 										<?php
-												foreach ( $footerIcons as $icon ) {
-													echo $this->getSkin()->makeFooterIcon( $icon );
-												}
+										foreach ( $footerIcons as $icon ) {
+											echo $skin->makeFooterIcon( $icon );
+										}
 										?>
 									</li>
 							<?php
@@ -239,6 +235,5 @@ class TempoTemplate extends BaseTemplate {
 	</body>
 </html>
 <?php
-
 	}
 }

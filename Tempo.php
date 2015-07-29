@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Tempo skin by Lojjik Braughler
  *
@@ -16,10 +15,8 @@
  *
  * To install place the Tempo folder (the folder containing this file!) into
  * skins/ and add this line to your wiki's LocalSettings.php:
- * require_once("$IP/skins/Tempo/Tempo.php");
- *
+ * require_once "$IP/skins/Tempo/Tempo.php";
  */
-
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
@@ -58,7 +55,7 @@ $wgResourceModules['skins.tempo.js'] = array(
 
 // wtf?
 
-SkinFactory::getDefaultInstance()->register( 'tempo', 'Tempo', function(){
+SkinFactory::getDefaultInstance()->register( 'tempo', 'Tempo', function() {
 	$config = ConfigFactory::getDefaultInstance()->makeConfig( 'tempo' );
 	return new SkinTempo( $config );
 } );
