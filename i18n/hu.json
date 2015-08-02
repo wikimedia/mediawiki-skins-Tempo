@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"ViDam"
 		]
 	},
+	"tempo-desc": "Egy letisztult, határozott és egyszerű felület",
 	"tempo-myprofile": "Profilom",
 	"tempo-notifications": "Értesítések",
 	"tempo-ribbon-nonewmessages": "Nincsenek új üzeneteid",
