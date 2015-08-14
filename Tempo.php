@@ -52,10 +52,3 @@ $wgResourceModules['skins.tempo.js'] = array(
 		'skins/Tempo/resources/js/tempo.js'
 	)
 );
-
-// wtf?
-
-SkinFactory::getDefaultInstance()->register( 'tempo', 'Tempo', function() {
-	$config = ConfigFactory::getDefaultInstance()->makeConfig( 'tempo' );
-	return new SkinTempo( $config );
-} );
