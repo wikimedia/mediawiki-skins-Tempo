@@ -145,7 +145,6 @@ class TempoTemplate extends BaseTemplate {
 		$skin = $this->getSkin();
 		$this->html( 'headelement' );
 ?>
-	<body>
 		<div id="container">
 			<div id="top" class="noprint">
 				<div id="topnav">
