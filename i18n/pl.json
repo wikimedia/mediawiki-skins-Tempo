@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"The Polish"
 		]
 	},
 	"tempo-desc": "Czysta, wyraźna i prosta skórka",
@@ -9,5 +10,6 @@
 	"tempo-notifications": "Powiadomienia",
 	"tempo-ribbon-nonewmessages": "Nie masz nowych wiadomości",
 	"tempo-ribbon-newmessages": "Masz nowe wiadomości",
-	"tempo-hello": "Witaj $1"
+	"tempo-hello": "Witaj $1",
+	"tempo-guest": "Gość"
 }
