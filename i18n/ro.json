@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Strainu"
+			"Strainu",
+			"Minisarm"
 		]
 	},
+	"tempo-desc": "Un aspect elegant, distinct și simplu",
+	"tempo-myprofile": "Profilul meu",
+	"tempo-notifications": "Notificări",
 	"tempo-ribbon-nonewmessages": "Nu aveți mesaje noi",
 	"tempo-ribbon-newmessages": "Aveți mesaje noi",
 	"tempo-hello": "Salut $1",
