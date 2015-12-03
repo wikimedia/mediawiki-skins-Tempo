@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gorizon"
+			"Gorizon",
+			"Mirzali"
 		]
 	},
-	"tempo-hello": "Merheba $1",
+	"tempo-hello": "Merheba, $1",
 	"tempo-guest": "Meyman"
 }
