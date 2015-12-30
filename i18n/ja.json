@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"2nd-player"
+			"2nd-player",
+			"Otokoume"
 		]
 	},
+	"tempo-myprofile": "自分のプロフィール",
+	"tempo-notifications": "通知",
 	"tempo-ribbon-nonewmessages": "新しいメッセージはありません",
 	"tempo-ribbon-newmessages": "新着メッセージがあります",
-	"tempo-hello": "$1 さん、こんにちは"
+	"tempo-hello": "$1 さん、こんにちは",
+	"tempo-guest": "ゲスト"
 }
