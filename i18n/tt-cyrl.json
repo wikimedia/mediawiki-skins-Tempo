@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ильнар"
+		]
+	},
+	"tempo-desc": "Чиста, ачык һәм гади бизәлеш",
+	"tempo-myprofile": "Минем профиль",
+	"tempo-notifications": "Белдерүләр",
+	"tempo-ribbon-nonewmessages": "Сезнең яңа хатларыгыз юк",
+	"tempo-ribbon-newmessages": "Сезнең яңа хатларыгыз бар",
+	"tempo-hello": "Исәнмесез, $1",
+	"tempo-guest": "Кунак"
+}
