@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Maroen1990"
 		]
 	},
-	"tempo-ribbon-newmessages": "لديك رسائل جديدة"
+	"tempo-myprofile": "صفحة المستخدم",
+	"tempo-notifications": "إخطارات",
+	"tempo-ribbon-nonewmessages": "ليست لديك رسائل جديدة.",
+	"tempo-ribbon-newmessages": "لديك رسائل جديدة",
+	"tempo-hello": "مرحبا, $1",
+	"tempo-guest": "ضيف"
 }
