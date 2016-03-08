@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Zygimantus"
 		]
 	},
-	"tempo-myprofile": "Mano Profilis",
+	"tempo-myprofile": "Mano profilis",
 	"tempo-notifications": "Pranešimai",
+	"tempo-ribbon-newmessages": "Jūs turite naujų žinučių",
 	"tempo-hello": "Sveiki, $1",
 	"tempo-guest": "Svečias"
 }
