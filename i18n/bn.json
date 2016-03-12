@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"Bodhisattwa"
+		]
+	},
+	"tempo-notifications": "বিজ্ঞপ্তিসমূহ",
+	"tempo-ribbon-nonewmessages": "আপনার কোন নতুন বার্তা নেই",
+	"tempo-ribbon-newmessages": "আপনার নতুন বার্তা এসেছে",
+	"tempo-hello": "নমস্কার, $1",
+	"tempo-guest": "অতিথি"
+}
