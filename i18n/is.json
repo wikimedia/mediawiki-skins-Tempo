@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"tempo-desc": "Hreinleg, einföld og öðruvísi framsetning",
+	"tempo-myprofile": "Notandasniðið mitt",
+	"tempo-notifications": "Tilkynningar",
+	"tempo-ribbon-nonewmessages": "Þú átt engin ný skilaboð",
+	"tempo-ribbon-newmessages": "Þú átt ný skilaboð",
+	"tempo-hello": "Halló, $1",
+	"tempo-guest": "Gestur"
+}
