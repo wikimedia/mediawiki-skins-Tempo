@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"SolidBlock"
+		]
+	},
+	"tempo-desc": "一杂清新、独一无二、聊撇滴皮肤",
+	"tempo-myprofile": "我的资料",
+	"tempo-notifications": "通知",
+	"tempo-ribbon-nonewmessages": "你冇得新消息",
+	"tempo-ribbon-newmessages": "您有新消息",
+	"tempo-hello": "嗨，$1",
+	"tempo-guest": "访客"
+}
