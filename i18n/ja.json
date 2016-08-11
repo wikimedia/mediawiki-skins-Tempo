@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"2nd-player",
-			"Otokoume"
+			"Otokoume",
+			"Fryed-peach"
 		]
 	},
+	"tempo-desc": "すっきりとした、明瞭でシンプルなスキン",
 	"tempo-myprofile": "自分のプロフィール",
 	"tempo-notifications": "通知",
 	"tempo-ribbon-nonewmessages": "新しいメッセージはありません",
