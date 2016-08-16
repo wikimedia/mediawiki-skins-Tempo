@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"StanProg"
 		]
 	},
+	"tempo-desc": "Чист, ясен и прост облик",
 	"tempo-myprofile": "Моят профил",
 	"tempo-notifications": "Известия",
 	"tempo-ribbon-nonewmessages": "Нямате нови съобщения",
