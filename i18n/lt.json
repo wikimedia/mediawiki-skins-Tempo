@@ -5,8 +5,10 @@
 			"Zygimantus"
 		]
 	},
+	"tempo-desc": "Švari, ryški ir paprasta išvaizda",
 	"tempo-myprofile": "Mano profilis",
 	"tempo-notifications": "Pranešimai",
+	"tempo-ribbon-nonewmessages": "Jūs neturite naujų pranešimų.",
 	"tempo-ribbon-newmessages": "Jūs turite naujų žinučių",
 	"tempo-hello": "Sveiki, $1",
 	"tempo-guest": "Svečias"
