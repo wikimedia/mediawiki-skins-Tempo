@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silraks"
+			"Silraks",
+			"Papuass"
 		]
 	},
 	"tempo-desc": "Tīra, skaidra un vienkārša apdare",
 	"tempo-myprofile": "Mans profils",
+	"tempo-notifications": "Paziņojumi",
 	"tempo-guest": "Viesis"
 }
