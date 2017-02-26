@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Y-M D"
+			"Y-M D",
+			"Fulup"
 		]
 	},
 	"tempo-myprofile": "Ma frofil",
 	"tempo-notifications": "Kemennoù",
-	"tempo-ribbon-nonewmessages": "N'hoc'h eus kemenn nevez ebet",
-	"tempo-ribbon-newmessages": "Kemennoù nevez hoc'h eus",
+	"tempo-ribbon-nonewmessages": "N'hoc'h eus kemennadenn nevez ebet",
+	"tempo-ribbon-newmessages": "Kemennadennoù nevez hoc'h eus",
 	"tempo-hello": "Ac'hanta, $1",
 	"tempo-guest": "Den pedet"
 }
