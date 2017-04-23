@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
-	"tempo-desc": "Uma pele limpa, distinta e simples",
+	"tempo-desc": "Um tema limpo, distinto e simples",
 	"tempo-myprofile": "Meu Perfil",
 	"tempo-notifications": "Notificações",
-	"tempo-ribbon-nonewmessages": "Você não tem novas mensagens.",
+	"tempo-ribbon-nonewmessages": "Você não tem novas mensagens",
 	"tempo-ribbon-newmessages": "Você tem novas mensagens",
 	"tempo-hello": "Olá, $1",
 	"tempo-guest": "Convidado"
