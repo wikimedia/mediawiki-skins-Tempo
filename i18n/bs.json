@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srdjan m"
+		]
+	},
+	"tempo-myprofile": "Moj profil",
+	"tempo-notifications": "Obavještenja",
+	"tempo-ribbon-nonewmessages": "Nemate novih poruka",
+	"tempo-ribbon-newmessages": "Imate nove poruke",
+	"tempo-hello": "Zdravo, $1",
+	"tempo-guest": "Gost"
+}
