@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siddhartha Ghai"
+			"Siddhartha Ghai",
+			"Sfic"
 		]
 	},
+	"tempo-myprofile": "मेरा प्रोफ़ाइल",
 	"tempo-notifications": "अधिसूचनाएँ",
 	"tempo-ribbon-nonewmessages": "आपके लिए कोई नए सन्देश नहीं हैं",
 	"tempo-ribbon-newmessages": "आपके लिए नए सन्देश हैं",
