@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"Maroen1990"
+			"Maroen1990",
+			"Mido"
 		]
 	},
+	"tempo-desc": "واجهة مميزة، واضحة وبسيطة",
 	"tempo-myprofile": "صفحة المستخدم",
 	"tempo-notifications": "إخطارات",
 	"tempo-ribbon-nonewmessages": "ليست لديك رسائل جديدة.",

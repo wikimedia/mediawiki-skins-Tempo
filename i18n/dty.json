@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nirajan pant"
+		]
+	},
+	"tempo-myprofile": "मेरो प्रोफाइल",
+	"tempo-notifications": "अधिसूचनाअन",
+	"tempo-ribbon-nonewmessages": "तम खिलाइ कोइ लै नौला सन्देश नाइँथिन",
+	"tempo-ribbon-newmessages": "तम खिलाइ नौला सन्देशअन छन",
+	"tempo-hello": "नमस्कार, $1",
+	"tempo-guest": "पाउनो"
+}
