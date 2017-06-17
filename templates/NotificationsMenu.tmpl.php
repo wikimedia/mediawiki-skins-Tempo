@@ -14,16 +14,19 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	}
 
 	private function addEchoNotifications() {
-		$notifications = ApiEchoNotifications::getNotifications( $this->data['user'], 'html', self::MAX_NOTES );
-		$output = '';
+		if ( is_callable( [ ApiEchoNotifications::class, 'getNotifications' ] ) ) {
+			// FIXME update this to the newer Echo API
+			$notifications = ApiEchoNotifications::getNotifications( $this->data['user'], 'html', self::MAX_NOTES );
+			$output = '';
 
-		if ( $notifications ) {
-			foreach ( $notifications as $note ) {
-				$output .= $note['*'];
+			if ( $notifications ) {
+				foreach ( $notifications as $note ) {
+					$output .= $note['*'];
+				}
 			}
-		}
 
-		$this->output .= $output;
+			$this->output .= $output;
+		}
 	}
 
 	public function hasNotifications() {
