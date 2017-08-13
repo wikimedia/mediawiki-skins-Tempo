@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"Kghbln"
 		]
 	},
-	"tempo-desc": "Eine saubere, deutliche und einfache Benutzeroberfläche",
+	"tempo-desc": "Stellt eine saubere, ausgeprägte und schlichte Benutzeroberfläche bereit",
 	"tempo-myprofile": "Mein Profil",
 	"tempo-notifications": "Benachrichtigungen",
 	"tempo-ribbon-nonewmessages": "Du hast keine neuen Nachrichten",
