@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joedalton"
+		]
+	},
+	"tempo-desc": "Et rent, distinkt og simpelt tema",
+	"tempo-myprofile": "Min profil",
+	"tempo-notifications": "Påmindelser",
+	"tempo-ribbon-nonewmessages": "Du har ingen nye beskeder",
+	"tempo-ribbon-newmessages": "Du har nye beskeder",
+	"tempo-hello": "Hej, $1",
+	"tempo-guest": "Gæst"
+}
