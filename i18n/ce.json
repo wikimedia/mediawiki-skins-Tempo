@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"tempo-myprofile": "Сан профиль",
+	"tempo-notifications": "ДӀахаийтарш",
+	"tempo-ribbon-nonewmessages": "Хьан бац керла хаам.",
+	"tempo-ribbon-newmessages": "Хьуна кхаьчна керла хаам",
+	"tempo-hello": "Маршалла, $1",
+	"tempo-guest": "Хьаша"
+}
