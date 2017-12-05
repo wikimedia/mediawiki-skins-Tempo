@@ -1,5 +1,9 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
 	"tempo-desc": "En ren, distinkt og enkel drakt",
 	"tempo-myprofile": "Min profil",
 	"tempo-notifications": "Varsler",
