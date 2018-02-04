@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geraki"
+			"Geraki",
+			"Nikosgranturismogt"
 		]
 	},
-	"tempo-notifications": "Ενημερώσεις"
+	"tempo-myprofile": "Το Προφίλ Μου",
+	"tempo-notifications": "Ενημερώσεις",
+	"tempo-ribbon-nonewmessages": "Δεν έχετε νέα μηνύματα",
+	"tempo-ribbon-newmessages": "Έχετε νέα μηνύματα",
+	"tempo-hello": "Γεια, $1",
+	"tempo-guest": "Επισκέπτης"
 }
