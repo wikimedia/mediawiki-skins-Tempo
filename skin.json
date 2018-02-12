@@ -26,7 +26,6 @@
 	},
 	"ResourceModules": {
 		"skins.tempo": {
-			"position": "top",
 			"styles": {
 				"resources/tempo.css": {
 					"media": "screen"
@@ -37,7 +36,6 @@
 			}
 		},
 		"skins.tempo.js": {
-			"position": "bottom",
 			"scripts": [
 				"resources/js/tempo.js"
 			]
