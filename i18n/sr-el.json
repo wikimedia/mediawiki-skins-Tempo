@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
+	"tempo-desc": "Jasan, izražajan i jednostavan skin",
 	"tempo-myprofile": "Moj profil",
+	"tempo-notifications": "Obaveštenja",
 	"tempo-ribbon-nonewmessages": "Nemate novih poruka",
 	"tempo-ribbon-newmessages": "Imate nove poruke",
-	"tempo-hello": "Zdravo, $1"
+	"tempo-hello": "Zdravo, $1",
+	"tempo-guest": "Gost"
 }
