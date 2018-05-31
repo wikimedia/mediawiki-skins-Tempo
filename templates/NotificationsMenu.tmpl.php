@@ -32,7 +32,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	public function hasNotifications() {
 		if ( $this->isEchoInstalled() ) {
 			$notifUser = MWEchoNotifUser::newFromUser( $this->data['user'] );
-			return $notifUser->getNotificationCount( false ) >= 1;
+			return $notifUser->getNotificationCount() >= 1;
 		}
 
 		return $this->data['newtalk'];
