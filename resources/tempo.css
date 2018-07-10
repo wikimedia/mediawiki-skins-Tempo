@@ -687,27 +687,6 @@ td.mw-label {
 	border: 1px solid #e5e5e5;
 }
 
-@media screen and (max-width: 1157px) {
-	#topSearch {
-		width: 30%;
-	}
-	#searchInput {
-		width: 75%;
-	}
-}
-
-@media screen and (max-width: 940px) {
-	#top > #topnav > .userlinks-wrapper {
-		width: 300px;
-	}
-	#topSearch {
-		width: 40%;
-	}
-	#searchInput {
-		width: 65%;
-	}
-}
-
 .ribbon {
 	min-width: 7px;
 	border-radius: 2px;

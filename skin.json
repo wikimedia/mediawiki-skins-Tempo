@@ -30,6 +30,12 @@
 				"resources/tempo.css": {
 					"media": "screen"
 				},
+				"resources/tempo-tiny.css": {
+					"media": "screen and ( max-width: 940px )"
+				},
+				"resources/tempo-small.css": {
+					"media": "screen and ( max-width: 1157px )"
+				},
 				"resources/normalize.css": {
 					"media": "screen"
 				}

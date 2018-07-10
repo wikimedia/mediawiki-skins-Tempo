@@ -1,0 +1,9 @@
+#top > #topnav > .userlinks-wrapper {
+	width: 300px;
+}
+#topSearch {
+	width: 40%;
+}
+#searchInput {
+	width: 65%;
+}
