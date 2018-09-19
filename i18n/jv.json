@@ -4,10 +4,11 @@
 			"NoiX180"
 		]
 	},
+	"tempo-desc": "Ules kang resik, mbédani, lan prasaja",
 	"tempo-myprofile": "Profilku",
-	"tempo-notifications": "Wara-wara",
+	"tempo-notifications": "Pambiwara",
 	"tempo-ribbon-nonewmessages": "Panjenengan ora duwé layang anyar",
-	"tempo-ribbon-newmessages": "Panjenengan antuk layang anyar",
+	"tempo-ribbon-newmessages": "Panjenengan olèh layang anyar",
 	"tempo-hello": "Sugeng rawuh, $1",
 	"tempo-guest": "Dhayoh"
 }
