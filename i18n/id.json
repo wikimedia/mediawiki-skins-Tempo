@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"William Surya Permana"
+		]
+	},
+	"tempo-desc": "Kulit yang sederhana, khas, dan bersih",
+	"tempo-myprofile": "Profil Saya",
+	"tempo-notifications": "Pemberitahuan",
+	"tempo-ribbon-nonewmessages": "Anda tidak memiliki pesan baru",
+	"tempo-ribbon-newmessages": "Anda memiliki pesan baru",
+	"tempo-hello": "Halo, $1",
+	"tempo-guest": "Tamu"
+}
