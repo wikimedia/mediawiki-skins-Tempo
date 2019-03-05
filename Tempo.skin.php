@@ -28,7 +28,7 @@ class SkinTempo extends SkinTemplate {
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
 		$jsModules = array( 'skins.tempo.js' );
-		$out->addModuleScripts( $jsModules );
+		$out->addModules( $jsModules );
 	}
 
 	public function setupSkinUserCss( OutputPage $out ) {
