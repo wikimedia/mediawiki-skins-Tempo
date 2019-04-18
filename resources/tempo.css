@@ -565,6 +565,11 @@ div.mw-createacct-benefits-container {
 	margin-right: 0;
 }
 
+/* Hide empty list items (T192446) */
+.mw-empty-elt {
+	display: none;
+}
+
 .mw-editsection a {
 	font-weight: normal !important;
 }
@@ -605,7 +610,7 @@ div.mw-createacct-benefits-container {
 	transition: color .4s, background-color .4s, border .4s;
 }
 
-#slider ul{
+#slider ul {
 	width: 180px;
 }
 
