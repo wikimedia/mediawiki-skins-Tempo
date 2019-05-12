@@ -22,6 +22,7 @@ class SkinTempo extends SkinTemplate {
 	private $tempoConfig;
 
 	public function __construct() {
+		parent::__construct( ...func_get_args() );
 		$this->tempoConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'tempo' );
 	}
 
