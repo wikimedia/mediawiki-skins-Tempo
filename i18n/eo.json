@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mirin"
 		]
 	},
+	"tempo-desc": "Pura, klara, kaj simpla etoso",
+	"tempo-myprofile": "Mia Profilo",
+	"tempo-notifications": "Sciigoj",
+	"tempo-ribbon-nonewmessages": "Vi ne havas novan mesaĝon",
+	"tempo-ribbon-newmessages": "Vi havas novajn mesaĝojn",
+	"tempo-hello": "Saluton, $1",
 	"tempo-guest": "Gasto"
 }
