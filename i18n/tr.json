@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rapsar"
+			"Rapsar",
+			"BaRaN6161 TURK"
 		]
 	},
-	"tempo-notifications": "Bildirimler"
+	"tempo-desc": "Temiz, farklı ve basit bir görünüm",
+	"tempo-myprofile": "Profilim",
+	"tempo-notifications": "Bildirimler",
+	"tempo-ribbon-nonewmessages": "Yeni mesajınız yok",
+	"tempo-ribbon-newmessages": "Yeni mesajınız var",
+	"tempo-hello": "Merhaba, $1",
+	"tempo-guest": "Misafir"
 }
