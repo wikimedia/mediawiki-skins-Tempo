@@ -4,5 +4,11 @@
 			"Bugoslav"
 		]
 	},
-	"tempo-ribbon-newmessages": "Imate nove poruke"
+	"tempo-desc": "Jasan, jedinstven i jednostavan izgled",
+	"tempo-myprofile": "Moj profil",
+	"tempo-notifications": "Obavijesti",
+	"tempo-ribbon-nonewmessages": "Trenutačno nemate novih poruka",
+	"tempo-ribbon-newmessages": "Imate nove poruke",
+	"tempo-hello": "Pozdrav, $1!",
+	"tempo-guest": "Gost/gošća"
 }
