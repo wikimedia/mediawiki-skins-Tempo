@@ -3,6 +3,7 @@
 		"authors": [
 			"Aftabuzzaman",
 			"Bodhisattwa",
+			"Titodutta",
 			"আজিজ",
 			"আফতাবুজ্জামান"
 		]
@@ -10,8 +11,8 @@
 	"tempo-desc": "একটি পরিচ্ছন্ন, স্বতন্ত্র, ও সহজ ত্বক",
 	"tempo-myprofile": "আমার প্রোফাইল",
 	"tempo-notifications": "বিজ্ঞপ্তিসমূহ",
-	"tempo-ribbon-nonewmessages": "আপনার কোন নতুন বার্তা নেই",
-	"tempo-ribbon-newmessages": "আপনার নতুন বার্তা এসেছে",
+	"tempo-ribbon-nonewmessages": "আপনার কাছে কোনও নতুন বার্তা নেই",
+	"tempo-ribbon-newmessages": "আপনার কাছে নতুন বার্তা এসেছে",
 	"tempo-hello": "হ্যালো, $1",
 	"tempo-guest": "অতিথি"
 }
