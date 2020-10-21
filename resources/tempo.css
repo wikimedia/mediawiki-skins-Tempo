@@ -197,6 +197,11 @@ QmCC);
 	height: 23px;
 }
 
+/* Super nasty fix for the search suggestions container; no, the number is _not_ arbitrary, sadly */
+html div.suggestions {
+	z-index: 999999999;
+}
+
 #topnav {
 	position: fixed;
 	top: 0;
