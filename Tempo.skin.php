@@ -10,7 +10,7 @@ class SkinTempo extends SkinTemplate {
 	public $skinname = 'tempo', $stylename = 'tempo',
 		$template = 'TempoTemplate';
 
-	public $mSidebarSections = array();
+	public $mSidebarSections = [];
 
 	/**
 	 * @var Config
@@ -24,14 +24,14 @@ class SkinTempo extends SkinTemplate {
 
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$jsModules = array( 'skins.tempo.js' );
+		$jsModules = [ 'skins.tempo.js' ];
 		$out->addModules( $jsModules );
 	}
 
 	public function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 
-		$cssModules = array( 'skins.tempo' );
+		$cssModules = [ 'skins.tempo' ];
 		$out->addModuleStyles( $cssModules );
 	}
 
@@ -43,8 +43,8 @@ class SkinTempo extends SkinTemplate {
 	}
 
 	public function getHeadNavigation() {
-		$menu = array();
-		$linkAttributes = array();
+		$menu = [];
+		$linkAttributes = [];
 
 		if ( class_exists( 'MediaWiki\User\TalkPageNotificationManager' ) ) {
 			// MW 1.35+
@@ -55,7 +55,7 @@ class SkinTempo extends SkinTemplate {
 		}
 
 		if ( $userHasNewMessages ) {
-			$linkAttributes = array( 'class' => 'notif' );
+			$linkAttributes = [ 'class' => 'notif' ];
 		}
 
 		if ( $this->getUser()->isAnon() ) {
@@ -103,9 +103,9 @@ class SkinTempo extends SkinTemplate {
 
 	public function getSearchForm() {
 		$searchTitle = SpecialPage::getTitleFor( 'Search' );
-		$top_search = Html::openElement( 'form', array( 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ) ) .
-								Html::openElement( 'input', array( 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ) ) .
-								Html::openElement( 'input', array( 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ) ) .
+		$top_search = Html::openElement( 'form', [ 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ] ) .
+								Html::openElement( 'input', [ 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ] ) .
+								Html::openElement( 'input', [ 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ] ) .
 						Html::closeElement( 'form' );
 
 		return $top_search;
@@ -116,7 +116,7 @@ class SkinTempo extends SkinTemplate {
 
 		foreach ( $this->mSidebarSections as $sidebarItem ) {
 			$sidebar_html .= Html::openElement( 'section' );
-			$sidebar_html .= Html::openElement( 'div', array( 'class' => 'top' ) );
+			$sidebar_html .= Html::openElement( 'div', [ 'class' => 'top' ] );
 			$sidebar_html .= Html::openElement( 'h3' ) . $sidebarItem['title'] . Html::closeElement( 'h3' );
 			$sidebar_html .= Html::closeElement( 'div' );
 			$sidebar_html .= $sidebarItem['content'];
