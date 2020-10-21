@@ -486,6 +486,22 @@ div.mw-createacct-benefits-container {
 	width: 100%;
 }
 
+/* [[mw:Help:Page status indicators]]; styles copied from MonoBook */
+.mw-indicators {
+	float: right;
+	line-height: 1.5em;
+	font-size: 95%;
+	/* This rule is needed to avoid there being too much whitespace above the <h1>
+	 * due to the existence of indicators
+	 */
+	margin-left: -2em;
+}
+
+.mw-indicator {
+	display: -moz-inline-block;
+	display: inline-block;
+}
+
 #bottom {
 	display: table-row;
 	height: 50px;

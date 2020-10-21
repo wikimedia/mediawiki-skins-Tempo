@@ -214,6 +214,7 @@ class TempoTemplate extends BaseTemplate {
 						</ul>
 					</div>
 					<div id="content">
+						<?php echo $this->getIndicators(); ?>
 						<h1><?php $this->html( 'title' ) ?></h1>
 						<article>
 							<?php $this->html( 'bodytext' ) ?>
