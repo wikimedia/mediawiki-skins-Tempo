@@ -61,13 +61,24 @@ class SkinTempo extends SkinTemplate {
 		if ( $this->getUser()->isAnon() ) {
 			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin' ), $this->msg( 'pt-login' )->plain() );
 		} else {
+			// $personalTools = $this->getPersonalToolsList();
+			$personalTools = $this->getStructuredPersonalTools();
+			// If we have Echo icons, remove them from the "My profile" menu
+			if ( isset( $personalTools['notifications-alert'] ) && $personalTools['notifications-alert'] ) {
+				unset( $personalTools['notifications-alert'] );
+			}
+			if ( isset( $personalTools['notifications-notice'] ) && $personalTools['notifications-notice'] ) {
+				unset( $personalTools['notifications-notice'] );
+			}
+			$personalToolsHTML = $this->makePersonalToolsList( $personalTools );
 			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), $this->msg( 'tempo-myprofile' ) ) .
-							Html::openElement( 'ul' ) . $this->getPersonalToolsList() . Html::closeElement( 'ul' );
+							Html::openElement( 'ul' ) . $personalToolsHTML . Html::closeElement( 'ul' );
 		}
 
 		$menu[] = $personalMenu;
 
 		$notifications = new NotificationsMenuTemplate( $this->getConfig() );
+		$notifications->set( 'skin', $this->getSkin() );
 		$notifications->set( 'user', $this->getUser() );
 		$notifications->set( 'newtalk', $userHasNewMessages );
 

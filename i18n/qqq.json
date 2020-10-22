@@ -7,6 +7,7 @@
 	"tempo-desc": "{{desc|what=skin|name=Tempo|url=https://www.mediawiki.org/wiki/Skin:Tempo}}",
 	"tempo-myprofile": "Label of one of two menus in the top navigation, providing links to a user's pages (such as talk page, contributions, user page, and preferences)",
 	"tempo-notifications": "Label of the second of two menus in the top navigation to be used for implementation of the Echo extension and new talk notifications\n{{Identical|Notification}}",
+	"tempo-messages-login": "Message shown to anonymous users on the Echo flyout when the [[mw:Extension:Echo|Echo extension]] is installed, prompting them to log in (because while anonymous users have a talk page, they currently do not have Echo notifications)",
 	"tempo-ribbon-nonewmessages": "Message shown on a ribbon in the notifications menu when there are no new talk page messages",
 	"tempo-ribbon-newmessages": "This is shown on a ribbon in the notifications menu when the user has new talk page messages",
 	"tempo-hello": "A generic greeting shown in the top navigation near the menus\n{{Identical|Hello}}",

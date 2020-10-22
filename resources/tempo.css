@@ -744,3 +744,22 @@ td.mw-label {
 	margin-left: 2px;
 	bottom: 5px;
 }
+
+/* Float the "X" (dismiss) link properly */
+.mw-echo-markAsReadButton {
+	float: right;
+}
+
+/* ...and ditto for the notification event icon as well */
+.mw-echo-icon {
+	float: left;
+	/* Give it a bit of padding, too! */
+	padding: 2px;
+	/* Apparently some of SocialProfile's icons (at least?) can appear M A S S I V E w/o this rule... */
+	max-width: 35px;
+}
+
+/* Make the msg shown to anons a bit less cramped, if you will */
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul.anonymous-user {
+	padding-left: 10px;
+}

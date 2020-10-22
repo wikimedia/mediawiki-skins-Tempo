@@ -7,6 +7,7 @@
 	"tempo-desc": "A clean, distinct, and simple skin",
 	"tempo-myprofile": "My Profile",
 	"tempo-notifications": "Notifications",
+	"tempo-messages-login": "Please [[Special:UserLogin|log in]] to view your notifications.",
 	"tempo-ribbon-nonewmessages": "You have no new messages",
 	"tempo-ribbon-newmessages": "You have new messages",
 	"tempo-hello": "Hello, $1",
