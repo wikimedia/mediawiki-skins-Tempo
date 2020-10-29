@@ -48,7 +48,7 @@ class SkinTempo extends SkinTemplate {
 
 		if ( class_exists( 'MediaWiki\User\TalkPageNotificationManager' ) ) {
 			// MW 1.35+
-			$userHasNewMessages = MediaWikiServices::getInstance()
+			$userHasNewMessages = MediaWiki\MediaWikiServices::getInstance()
 				->getTalkPageNotificationManager()->userHasNewMessages( $this->getUser() );
 		} else {
 			$userHasNewMessages = $this->getUser()->getNewtalk();
