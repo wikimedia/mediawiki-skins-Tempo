@@ -8,6 +8,7 @@
 	"tempo-desc": "Stellt eine saubere, ausgeprägte und schlichte Benutzeroberfläche bereit",
 	"tempo-myprofile": "Mein Profil",
 	"tempo-notifications": "Benachrichtigungen",
+	"tempo-messages-login": "Bitte [[Special:UserLogin|melde dich an]], um deine Benachrichtungen zu sehen.",
 	"tempo-ribbon-nonewmessages": "Du hast keine neuen Nachrichten",
 	"tempo-ribbon-newmessages": "Du hast neue Nachrichten",
 	"tempo-hello": "Hallo, $1",
