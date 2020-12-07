@@ -8,6 +8,7 @@
 	"tempo-desc": "Um tema limpo, distinto e simples",
 	"tempo-myprofile": "Meu Perfil",
 	"tempo-notifications": "Notificações",
+	"tempo-messages-login": "Por favor [[Special:UserLogin|entre]] para ver suas notificações.",
 	"tempo-ribbon-nonewmessages": "Você não tem novas mensagens",
 	"tempo-ribbon-newmessages": "Você tem novas mensagens",
 	"tempo-hello": "Olá, $1",

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Linedwell",
 			"Orikrin1998",
 			"Wladek92"
@@ -9,6 +10,7 @@
 	"tempo-desc": "Un habillage propre, net et simple",
 	"tempo-myprofile": "Mon profil",
 	"tempo-notifications": "Notifications",
+	"tempo-messages-login": "Veuillez vous [[Special:UserLogin|connecter]] pour afficher vos notifications.",
 	"tempo-ribbon-nonewmessages": "Vous n’avez aucun nouveau message",
 	"tempo-ribbon-newmessages": "Vous avez de nouveaux messages",
 	"tempo-hello": "Bonjour, $1",

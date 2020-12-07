@@ -9,6 +9,7 @@
 	"tempo-desc": "Ett rent, tydligt och enkelt utseende",
 	"tempo-myprofile": "Min profil",
 	"tempo-notifications": "Aviseringar",
+	"tempo-messages-login": "Var god [[Special:UserLogin|logga in]] för att se dina aviseringar.",
 	"tempo-ribbon-nonewmessages": "Du har inga nya meddelanden",
 	"tempo-ribbon-newmessages": "Du har nya meddelanden",
 	"tempo-hello": "Hej, $1",

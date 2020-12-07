@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Geraki",
-			"Nikosgranturismogt"
+			"NikosLikomitros",
+			"Nikosgranturismogt",
+			"Norhorn"
 		]
 	},
 	"tempo-desc": "Ένα καθαρό, ξεκάθαρο και απλό θέμα",
 	"tempo-myprofile": "Το Προφίλ Μου",
 	"tempo-notifications": "Ενημερώσεις",
+	"tempo-messages-login": "Παρακαλούμε [[Special:UserLogin|συνδεθείτε]] για εμφάνιση των ειδοποιήσεων σας.",
 	"tempo-ribbon-nonewmessages": "Δεν έχετε νέα μηνύματα",
 	"tempo-ribbon-newmessages": "Έχετε νέα μηνύματα",
 	"tempo-hello": "Γεια, $1",

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"1917 Ekim Devrimi",
 			"Gorizon",
 			"Kumkumuk",
 			"Mirzali"
@@ -9,6 +10,7 @@
 	"tempo-desc": "Pak, babetna u basit cilt",
 	"tempo-myprofile": "Profilê mı",
 	"tempo-notifications": "Tebliği",
+	"tempo-messages-login": "Pêhesnayışê weyniyayışi rê [[Special:UserLogin|ronıştış akerê ]].",
 	"tempo-ribbon-nonewmessages": "Şımaré mesaco newe çıni yo",
 	"tempo-ribbon-newmessages": "Şımaré mesaco newe est o",
 	"tempo-hello": "Merheba, $1",

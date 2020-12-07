@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"Rapsar"
 		]
 	},
 	"tempo-desc": "Temiz, farklı ve basit bir görünüm",
 	"tempo-myprofile": "Profilim",
 	"tempo-notifications": "Bildirimler",
+	"tempo-messages-login": "Bildirimlerinizi görüntülemek için lütfen [[Special:UserLogin|oturum açın]].",
 	"tempo-ribbon-nonewmessages": "Yeni mesajınız yok",
 	"tempo-ribbon-newmessages": "Yeni mesajınız var",
 	"tempo-hello": "Merhaba, $1",
