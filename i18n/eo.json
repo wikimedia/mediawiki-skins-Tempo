@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Javiero",
 			"Mirin",
 			"Robin van der Vliet"
 		]
@@ -8,6 +9,7 @@
 	"tempo-desc": "Pura, klara, kaj simpla etoso",
 	"tempo-myprofile": "Mia Profilo",
 	"tempo-notifications": "Sciigoj",
+	"tempo-messages-login": "Bonvolu[[Special:UserLogin|log in]] por vidi viajn sciigojn.",
 	"tempo-ribbon-nonewmessages": "Vi ne havas novan mesaĝon",
 	"tempo-ribbon-newmessages": "Vi havas novajn mesaĝojn",
 	"tempo-hello": "Saluton, $1",
