@@ -650,6 +650,14 @@ a.text {
 	float: right;
 }
 
+.visualClear {
+	clear: both;
+}
+
+.printfooter {
+	display: none;
+}
+
 .successbox {
 	padding: 0;
 }
