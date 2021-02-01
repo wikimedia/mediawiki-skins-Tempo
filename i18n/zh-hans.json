@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lakejason0",
 			"Liuxinyu970226"
 		]
 	},
 	"tempo-desc": "一个清新的、独特的和简单的皮肤",
 	"tempo-myprofile": "我的资料",
 	"tempo-notifications": "通知",
+	"tempo-messages-login": "请[[Special:UserLogin|登录]]以查看您的通知。",
 	"tempo-ribbon-nonewmessages": "您没有新消息",
 	"tempo-ribbon-newmessages": "您有新消息",
 	"tempo-hello": "您好，$1",
