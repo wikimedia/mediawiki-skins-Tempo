@@ -46,13 +46,8 @@ class SkinTempo extends SkinTemplate {
 		$menu = [];
 		$linkAttributes = [];
 
-		if ( class_exists( 'MediaWiki\User\TalkPageNotificationManager' ) ) {
-			// MW 1.35+
-			$userHasNewMessages = MediaWiki\MediaWikiServices::getInstance()
-				->getTalkPageNotificationManager()->userHasNewMessages( $this->getUser() );
-		} else {
-			$userHasNewMessages = $this->getUser()->getNewtalk();
-		}
+		$userHasNewMessages = MediaWiki\MediaWikiServices::getInstance()
+			->getTalkPageNotificationManager()->userHasNewMessages( $this->getUser() );
 
 		if ( $userHasNewMessages ) {
 			$linkAttributes = [ 'class' => 'notif' ];
