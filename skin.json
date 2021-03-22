@@ -8,6 +8,9 @@
 	"descriptionmsg": "tempo-desc",
 	"license-name": "CC0-1.0",
 	"type": "skin",
+	"requires": {
+		"MediaWiki": ">=1.35.0"
+	},
 	"ConfigRegistry": {
 		"tempo": "GlobalVarConfig::newInstance"
 	},
