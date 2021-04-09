@@ -46,15 +46,19 @@ class SkinTempo extends SkinTemplate {
 		$menu = [];
 		$linkAttributes = [];
 
-		$userHasNewMessages = MediaWiki\MediaWikiServices::getInstance()
-			->getTalkPageNotificationManager()->userHasNewMessages( $this->getUser() );
+		$services = MediaWiki\MediaWikiServices::getInstance();
+		$linkRenderer = $services->getLinkRenderer();
+		$userHasNewMessages = $services->getTalkPageNotificationManager()->userHasNewMessages( $this->getUser() );
 
 		if ( $userHasNewMessages ) {
 			$linkAttributes = [ 'class' => 'notif' ];
 		}
 
 		if ( $this->getUser()->isAnon() ) {
-			$personalMenu = Linker::linkKnown( SpecialPage::getTitleFor( 'UserLogin' ), $this->msg( 'pt-login' )->plain() );
+			$personalMenu = $linkRenderer->makeKnownLink(
+				SpecialPage::getTitleFor( 'Userlogin' ),
+				$this->msg( 'pt-login' )->text()
+			);
 		} else {
 			// $personalTools = $this->getPersonalToolsList();
 			$personalTools = $this->getStructuredPersonalTools();
@@ -66,7 +70,7 @@ class SkinTempo extends SkinTemplate {
 				unset( $personalTools['notifications-notice'] );
 			}
 			$personalToolsHTML = $this->makePersonalToolsList( $personalTools );
-			$personalMenu = Linker::linkKnown( $this->getUser()->getUserPage(), $this->msg( 'tempo-myprofile' ) ) .
+			$personalMenu = $linkRenderer->makeKnownLink( $this->getUser()->getUserPage(), $this->msg( 'tempo-myprofile' )->text() ) .
 							Html::openElement( 'ul' ) . $personalToolsHTML . Html::closeElement( 'ul' );
 		}
 

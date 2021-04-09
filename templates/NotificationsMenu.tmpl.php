@@ -3,6 +3,8 @@
 // If Echo extension is installed, we use its messages
 // If not installed, we only use it for new talk page notifications
 
+use MediaWiki\MediaWikiServices;
+
 class NotificationsMenuTemplate extends BaseTemplate {
 
 	private $menuItems;
@@ -50,15 +52,21 @@ class NotificationsMenuTemplate extends BaseTemplate {
 		$ribbonClass = 'ribbon';
 
 		if ( $this->data['newtalk'] ) {
-			$ribbonMessage = $this->data['skin']->msg( 'tempo-ribbon-newmessages' )->escaped();
+			$ribbonMessage = $this->data['skin']->msg( 'tempo-ribbon-newmessages' )->text();
 			$ribbonClass .= ' unread';
 		} else {
-			$ribbonMessage = $this->data['skin']->msg( 'tempo-ribbon-nonewmessages' )->escaped();
+			$ribbonMessage = $this->data['skin']->msg( 'tempo-ribbon-nonewmessages' )->text();
 			$ribbonClass .= ' read';
 		}
 
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+
 		$this->output .= Html::openElement( 'li' ) .
-						Linker::link( $this->data['user']->getTalkPage(), $ribbonMessage, [ 'class' => $ribbonClass ] );
+						$linkRenderer->makeLink(
+							$this->data['user']->getTalkPage(),
+							$ribbonMessage,
+							[ 'class' => $ribbonClass ]
+						) .
 					Html::closeElement( 'li' );
 	}
 
@@ -79,7 +87,12 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	}
 
 	if ( $this->isEchoInstalled() ) {
-		echo Linker::link( SpecialPage::getTitleFor( 'Notifications' ), $this->data['skin']->msg( 'tempo-notifications' )->escaped(), [ 'class' => $linkClass ] );
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+		echo $linkRenderer->makeLink(
+			SpecialPage::getTitleFor( 'Notifications' ),
+			$this->data['skin']->msg( 'tempo-notifications' )->text(),
+			[ 'class' => $linkClass ]
+		);
 	} else {
 		echo Html::rawElement( 'a', [ 'href' => '#', 'class' => $linkClass ], $this->data['skin']->msg( 'tempo-notifications' )->escaped() );
 	}
