@@ -256,6 +256,7 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 		</div>
+		<?php echo $this->printTrail(); ?>
 	</body>
 </html>
 <?php
