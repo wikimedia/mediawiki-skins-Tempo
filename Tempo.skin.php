@@ -28,13 +28,6 @@ class SkinTempo extends SkinTemplate {
 		$out->addModules( $jsModules );
 	}
 
-	public function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-
-		$cssModules = [ 'skins.tempo' ];
-		$out->addModuleStyles( $cssModules );
-	}
-
 	/**
 	 * Override to pass our Config instance to it
 	 */

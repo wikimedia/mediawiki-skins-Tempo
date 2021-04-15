@@ -15,7 +15,16 @@
 		"tempo": "GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
-		"tempo": "Tempo"
+		"tempo": {
+			"displayname": "Tempo",
+			"class": "SkinTempo",
+			"args": [ {
+				"name": "tempo",
+				"styles": [
+					"skins.tempo"
+				]
+			} ]
+		}
 	},
 	"MessagesDirs": {
 		"SkinTempo": [
