@@ -38,6 +38,7 @@
 	},
 	"ResourceModules": {
 		"skins.tempo": {
+			"class": "ResourceLoaderSkinModule",
 			"styles": {
 				"resources/tempo.css": {
 					"media": "screen"
