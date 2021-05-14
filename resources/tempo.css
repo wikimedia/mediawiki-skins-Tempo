@@ -104,6 +104,10 @@ dt {
 	display: inline-block;
 }
 
+#topSearch label {
+	display: none;
+}
+
 #bubble_search {
 	width: 100%;
 }

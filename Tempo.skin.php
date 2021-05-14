@@ -106,10 +106,15 @@ class SkinTempo extends SkinTemplate {
 
 	public function getSearchForm() {
 		$searchTitle = SpecialPage::getTitleFor( 'Search' );
-		$top_search = Html::openElement( 'form', [ 'name' => 'search_site', 'action' => $searchTitle->getFullURL(), 'method' => 'GET' ] ) .
-								Html::openElement( 'input', [ 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ] ) .
-								Html::openElement( 'input', [ 'type' => 'submit', 'id' => 'searchButton', 'value' => 'Search' ] ) .
-						Html::closeElement( 'form' );
+		$top_search = Html::openElement( 'form', [
+			'name' => 'search_site',
+			'action' => $searchTitle->getFullURL(),
+			'method' => 'get',
+			'role' => 'search' ] ) .
+				Html::label( $this->msg( 'search' )->text(), 'searchInput' ) .
+				Html::openElement( 'input', [ 'type' => 'text', 'id' => 'searchInput', 'class' => 'search_box', 'name' => 'search' ] ) .
+				Html::openElement( 'input', [ 'type' => 'submit', 'id' => 'searchButton', 'value' => $this->msg( 'searchbutton' )->text() ] ) .
+			Html::closeElement( 'form' );
 
 		return $top_search;
 	}
@@ -156,17 +161,17 @@ class TempoTemplate extends BaseTemplate {
 		<div id="container">
 			<div id="top" class="noprint">
 				<div id="topnav">
-					<div id="logo"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
+					<div id="logo" role="banner"><img src="<?php $this->text( 'logopath' ) ?>" width="66" alt="<?php $this->text( 'sitename' ) ?>"/></div>
 					<div id="topSearch"><?php echo $skin->getSearchForm() ?></div>
 					<div class="userlinks-wrapper">
-						<div id="hello"><p><?php echo $skin->msg( 'tempo-hello', $skin->getNameForUser() )->plain() ?></p></div>
+						<div id="hello"><?php echo $skin->msg( 'tempo-hello', $skin->getNameForUser() )->parseAsBlock() ?></div>
 						<div id="userlinks"><?php echo $skin->getHeadNavigation() ?></div>
 					</div>
 				</div>
 			</div>
 
 				<div id="rail" class="noprint">
-					<div id="sidebar">
+					<div id="sidebar" role="navigation">
 						<?php
 							foreach ( $this->getSidebar() as $boxName => $box ) { ?>
 										<section id="<?php echo Sanitizer::escapeIdForAttribute( $box['id'] ) ?>"<?php echo Linker::tooltip( $box['id'] ) ?>>
@@ -200,7 +205,7 @@ class TempoTemplate extends BaseTemplate {
 						}
 
 					?>
-					<div id="navtabs" class="noprint">
+					<div id="navtabs" class="noprint" role="navigation">
 						<ul class="tabsleft">
 						<?php
 							foreach ( $skin->getTabs( 'left' ) as $key => $item ) {
@@ -216,7 +221,7 @@ class TempoTemplate extends BaseTemplate {
 						?>
 						</ul>
 					</div>
-					<div id="content">
+					<div id="content" role="main">
 						<?php echo $this->getIndicators(); ?>
 						<h1><?php $this->html( 'title' ) ?></h1>
 						<article>
@@ -224,7 +229,7 @@ class TempoTemplate extends BaseTemplate {
 						</article>
 					</div>
 				</div>
-				<div id="bottom" class="noprint">
+				<div id="bottom" class="noprint" role="contentinfo" lang="<?php echo $this->get( 'userlang' ) ?>" dir="<?php echo $this->get( 'dir' ) ?>">
 					<footer>
 					<?php
 						foreach ( $this->getFooterLinks() as $category => $links ) { ?>
