@@ -599,28 +599,6 @@ div.mw-createacct-benefits-container {
 	font-weight: normal !important;
 }
 
-#preftoc {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-#preftoc li {
-	display: inline-block;
-	padding: 10px;
-}
-
-.selected a {
-	font-weight: bold;
-}
-
-#preftoc li:hover a {
-	text-decoration: none;
-}
-
-.mw-prefs-buttons {
-	padding-top: 10px;
-}
 #main #content .mw-htmlform-submit {
 	color: #fff;
 	background-color: #00c217;
