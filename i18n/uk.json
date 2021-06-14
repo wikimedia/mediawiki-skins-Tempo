@@ -7,6 +7,7 @@
 	"tempo-desc": "Ясна, чітка і проста тема оформлення",
 	"tempo-myprofile": "Мій профіль",
 	"tempo-notifications": "Сповіщення",
+	"tempo-messages-login": "Будь ласка, [[Special:UserLogin|увійдіть]], щоб переглянути свої сповіщення.",
 	"tempo-ribbon-nonewmessages": "У Вас немає нових повідомлень",
 	"tempo-ribbon-newmessages": "У Вас є нові повідомлення",
 	"tempo-hello": "Привіт, $1",
