@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"محک"
+		]
+	},
+	"tempo-desc": "اتا تمیز، سیوا، و ساده جلد",
+	"tempo-myprofile": "مه پروفایل",
+	"tempo-notifications": "سرساب‌کرون",
+	"tempo-messages-login": "لطفاً شه کاروری حساب [[Special:UserLogin|دله بئین]] تا شه نو چیون جه سرساب بوین",
+	"tempo-ribbon-nonewmessages": "جدید پغوم ندارنی",
+	"tempo-ribbon-newmessages": "جدید پغوم دارنی",
+	"tempo-hello": "سلام، $1",
+	"tempo-guest": "مهمون"
+}
