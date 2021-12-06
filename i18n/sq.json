@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kosovastar"
+			"Kosovastar",
+			"Besnik b"
 		]
 	},
-	"tempo-ribbon-nonewmessages": "Ti nuk ke mesazhe të reja",
-	"tempo-ribbon-newmessages": "Ti ke mesazhe të reja"
+	"tempo-ribbon-nonewmessages": "S’keni mesazhe të reja",
+	"tempo-ribbon-newmessages": "Keni mesazhe të reja"
 }
