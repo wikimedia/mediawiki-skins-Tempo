@@ -4,12 +4,14 @@
 			"2nd-player",
 			"Fryed-peach",
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"しぃ"
 		]
 	},
 	"tempo-desc": "すっきりとした、明瞭でシンプルな外装",
 	"tempo-myprofile": "自分のプロフィール",
 	"tempo-notifications": "通知",
+	"tempo-messages-login": "通知内容を確認するには[[Special:UserLogin|ログイン]]してください。",
 	"tempo-ribbon-nonewmessages": "新しいメッセージはありません",
 	"tempo-ribbon-newmessages": "新着メッセージがあります",
 	"tempo-hello": "$1 さん、こんにちは",

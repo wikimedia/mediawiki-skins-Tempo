@@ -4,5 +4,7 @@
 			"Dr Lotus Black"
 		]
 	},
-	"tempo-notifications": "အသိပေးချက်များ"
+	"tempo-notifications": "အသိပေးချက်များ",
+	"tempo-hello": "မင်္ဂလာပါ၊ $1",
+	"tempo-guest": "ဧည့်သည်"
 }

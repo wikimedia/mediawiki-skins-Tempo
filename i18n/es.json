@@ -3,12 +3,14 @@
 		"authors": [
 			"Fitoschido",
 			"Kroji",
-			"Macofe"
+			"Macofe",
+			"Avengium"
 		]
 	},
 	"tempo-desc": "Una apariencia diferente, simple y limpia",
 	"tempo-myprofile": "Mi perfil",
 	"tempo-notifications": "Notificaciones",
+	"tempo-messages-login": "Por favor [[Special:UserLogin|iniciar sesión]] para ver sus notificaciones.",
 	"tempo-ribbon-nonewmessages": "No tienes mensajes nuevos",
 	"tempo-ribbon-newmessages": "Tienes mensajes nuevos",
 	"tempo-hello": "Hola, $1",
