@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Daud I.F. Argana",
 			"William Surya Permana"
 		]
 	},
 	"tempo-desc": "Kulit yang sederhana, khas, dan bersih",
 	"tempo-myprofile": "Profil Saya",
 	"tempo-notifications": "Pemberitahuan",
+	"tempo-messages-login": "Tolong [[Special:UserLogin|masuk log]] untuk melihat pemberitahuan Anda.",
 	"tempo-ribbon-nonewmessages": "Anda tidak memiliki pesan baru",
 	"tempo-ribbon-newmessages": "Anda memiliki pesan baru",
 	"tempo-hello": "Halo, $1",
