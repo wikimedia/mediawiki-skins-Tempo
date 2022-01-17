@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Khun Kt"
+		]
+	},
+	"tempo-myprofile": "နမ်းပရိုဖုဲင်",
+	"tempo-notifications": "ဖေႏသေချက်ဖိုင်ႏ",
+	"tempo-ribbon-nonewmessages": "နာꩻလိတ်မဲက်သေ့တသာဖိုင်ႏအဝ်ႏတဝ်း",
+	"tempo-ribbon-newmessages": "နာꩻလိတ်မဲက်သေ့တသာဖုံႏ အဝ်ႏသြ",
+	"tempo-hello": "မင်ႏဂလာႏဒျာႏ၊ $1",
+	"tempo-guest": "ထဉ်ႏ"
+}
