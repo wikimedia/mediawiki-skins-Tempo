@@ -17,6 +17,12 @@ class NotificationsMenuTemplate extends BaseTemplate {
 
 	private function addEchoNotifications() {
 		$user = $this->data['user'];
+		// [[phab:T301381]] avoid fataling with Echo installed.
+		if (
+			!method_exists( 'EchoAttributeManager', 'newFromGlobalVars' )
+		) {
+			return;
+		}
 		$attributeManager = EchoAttributeManager::newFromGlobalVars();
 		$eventTypes = $attributeManager->getUserEnabledEvents( $user, 'web' );
 		$mapper = new EchoNotificationMapper();
@@ -71,7 +77,9 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	}
 
 	public function execute() {
+		var_dump( 9 );
 		if ( $this->isEchoInstalled() ) {
+			var_dump( 12 );
 			$this->addEchoNotifications();
 		} else {
 			$this->addRibbon();
