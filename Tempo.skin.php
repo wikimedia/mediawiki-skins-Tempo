@@ -84,26 +84,6 @@ class SkinTempo extends SkinTemplate {
 		return $userlinks;
 	}
 
-	public function getTabs( $side = 'left' ) {
-		$content_navigation = $this->buildContentNavigationUrls();
-
-		$namespaces = $content_navigation['namespaces'];
-		$actions = $content_navigation['actions'];
-		$views = $content_navigation['views'];
-
-		unset( $actions['watch'] );
-		unset( $actions['unwatch'] );
-		unset( $views['view'] );
-
-		// left side
-		if ( $side === 'left' ) {
-			return array_merge( $namespaces, $views );
-		}
-
-		// right side
-		return $actions;
-	}
-
 	public function getSearchForm() {
 		$searchTitle = SpecialPage::getTitleFor( 'Search' );
 		$top_search = Html::openElement( 'form', [
@@ -153,6 +133,26 @@ class SkinTempo extends SkinTemplate {
 }
 
 class TempoTemplate extends BaseTemplate {
+
+	public function getTabs( $side = 'left' ) {
+		$content_navigation = $this->get( 'content_navigation' );
+
+		$namespaces = $content_navigation['namespaces'];
+		$actions = $content_navigation['actions'];
+		$views = $content_navigation['views'];
+
+		unset( $actions['watch'] );
+		unset( $actions['unwatch'] );
+		unset( $views['view'] );
+
+		// left side
+		if ( $side === 'left' ) {
+			return array_merge( $namespaces, $views );
+		}
+
+		// right side
+		return $actions;
+	}
 
 	public function execute() {
 		$skin = $this->getSkin();
@@ -208,14 +208,14 @@ class TempoTemplate extends BaseTemplate {
 					<div id="navtabs" class="noprint" role="navigation">
 						<ul class="tabsleft">
 						<?php
-							foreach ( $skin->getTabs( 'left' ) as $key => $item ) {
+							foreach ( $this->getTabs( 'left' ) as $key => $item ) {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
 						</ul>
 						<ul class="tabsright">
 						<?php
-							foreach ( $skin->getTabs( 'right' ) as $key => $item ) {
+							foreach ( $this->getTabs( 'right' ) as $key => $item ) {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
