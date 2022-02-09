@@ -77,9 +77,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	}
 
 	public function execute() {
-		var_dump( 9 );
 		if ( $this->isEchoInstalled() ) {
-			var_dump( 12 );
 			$this->addEchoNotifications();
 		} else {
 			$this->addRibbon();
