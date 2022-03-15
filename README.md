@@ -10,7 +10,7 @@ This skin is almost ready for production use, with some caveats:
 
 To install, clone this repository into your skins directory in a folder called "Tempo".
 
-Add require_once("$IP/skins/Tempo/Tempo.php"); to your LocalSettings.php
+Add wfLoadSkin( 'Tempo' ); to your LocalSettings.php
 
 Change $wgDefaultSkin to 'tempo' in LocalSettings.php
 
