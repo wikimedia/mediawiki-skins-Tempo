@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Taresi"
+			"Taresi",
+			"Languaeditor"
 		]
 	},
 	"tempo-hello": "Niltzé, $1",
-	"tempo-guest": "Tēcalpanohqui"
+	"tempo-guest": "Paxalohketl"
 }
