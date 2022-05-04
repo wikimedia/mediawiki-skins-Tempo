@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Reza1615",
-			"Mohammad ebz"
+			"Mohammad ebz",
+			"Beginneruser"
 		]
 	},
 	"tempo-desc": "یک پوستهٔ تمیز، ساده و متمایز",
 	"tempo-myprofile": "نمایهٔ من",
-	"tempo-notifications": "اعلان‌ها",
+	"tempo-notifications": "آگاه‌سازی‌ها",
 	"tempo-ribbon-nonewmessages": "پیام تازه ندارید",
 	"tempo-ribbon-newmessages": "پیام‌های جدیدی دارید",
 	"tempo-hello": "سلام، $1",
