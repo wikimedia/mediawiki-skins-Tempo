@@ -156,7 +156,6 @@ class TempoTemplate extends BaseTemplate {
 
 	public function execute() {
 		$skin = $this->getSkin();
-		$this->html( 'headelement' );
 ?>
 		<div id="container">
 			<div id="top" class="noprint">
@@ -264,9 +263,6 @@ class TempoTemplate extends BaseTemplate {
 				</div>
 			</div>
 		</div>
-		<?php echo $this->printTrail(); ?>
-	</body>
-</html>
 <?php
 	}
 }

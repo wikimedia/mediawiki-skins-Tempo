@@ -9,7 +9,7 @@
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">=1.35.0"
+		"MediaWiki": ">=1.39.0"
 	},
 	"ConfigRegistry": {
 		"tempo": "GlobalVarConfig::newInstance"
@@ -20,6 +20,7 @@
 			"class": "SkinTempo",
 			"args": [ {
 				"name": "tempo",
+				"bodyOnly": true,
 				"styles": [
 					"skins.tempo"
 				]
