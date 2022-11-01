@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Maroen1990",
+			"Meno25",
 			"Mido",
 			"محمد أحمد عبد الفتاح"
 		]
@@ -9,6 +10,7 @@
 	"tempo-desc": "واجهة مميزة، واضحة وبسيطة",
 	"tempo-myprofile": "صفحة المستخدم",
 	"tempo-notifications": "إخطارات",
+	"tempo-messages-login": "يرجى [[Special:UserLogin|تسجيل الدخول]] لعرض إشعاراتك.",
 	"tempo-ribbon-nonewmessages": "ليست لديك رسائل جديدة.",
 	"tempo-ribbon-newmessages": "لديك رسائل جديدة",
 	"tempo-hello": "مرحبا, $1",
