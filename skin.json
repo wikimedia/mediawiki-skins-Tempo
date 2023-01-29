@@ -52,6 +52,9 @@
 				},
 				"resources/normalize.css": {
 					"media": "screen"
+				},
+				"resources/print.css": {
+					"media": "print"
 				}
 			}
 		},
