@@ -12,18 +12,20 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	const MAX_NOTES = 5;
 
 	private function isEchoInstalled() {
-		return class_exists( 'ApiEchoNotifications' ) && class_exists( 'MWEchoNotifUser' );
+		return ExtensionRegistry::getInstance()->isLoaded( 'Echo' );
 	}
 
 	private function addEchoNotifications() {
 		$user = $this->data['user'];
+
 		// [[phab:T301381]] avoid fataling with Echo installed.
-		if (
-			!method_exists( 'EchoAttributeManager', 'newFromGlobalVars' )
-		) {
-			return;
+		if ( method_exists( 'EchoAttributeManager', 'newFromGlobalVars' ) ) {
+			$attributeManager = EchoAttributeManager::newFromGlobalVars();
+		} else {
+			// @see https://github.com/wikimedia/mediawiki-extensions-Echo/commit/596729d852ae5fe8c6b3f43c582982f15ac349f3
+			$attributeManager = EchoServices::getInstance()->getAttributeManager();
 		}
-		$attributeManager = EchoAttributeManager::newFromGlobalVars();
+
 		$eventTypes = $attributeManager->getUserEnabledEvents( $user, 'web' );
 		$mapper = new EchoNotificationMapper();
 		$notifications = $mapper->fetchByUser( $user, self::MAX_NOTES, 0, $eventTypes );
@@ -36,6 +38,11 @@ class NotificationsMenuTemplate extends BaseTemplate {
 				$formatted = EchoDataOutputFormatter::formatOutput( $note, 'html', $user, $language );
 				$output .= $formatted['*'];
 			}
+		} else {
+			// Show an informative message letting the user know there's nothing to see here.
+			// Otherwise we'd render an empty menu with no contents if the user
+			// has no notifications, and that'd be just silly.
+			$output .= $this->data['skin']->msg( 'tempo-no-notifications' )->escaped();
 		}
 
 		$this->output .= $output;
@@ -83,33 +90,32 @@ class NotificationsMenuTemplate extends BaseTemplate {
 			$this->addRibbon();
 		}
 
-?>
-<?php
+		if ( $this->hasNotifications() ) {
+			$containerClass = '';
+			$linkClass = 'notif';
+		} else {
+			$containerClass = 'no-notifications';
+			$linkClass = '';
+		}
 
-	if ( $this->hasNotifications() ) {
-		$linkClass = 'notif';
-	} else {
-		$linkClass = '';
-	}
+		if ( $this->isEchoInstalled() ) {
+			$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+			echo $linkRenderer->makeLink(
+				SpecialPage::getTitleFor( 'Notifications' ),
+				$this->data['skin']->msg( 'tempo-notifications' )->text(),
+				[ 'class' => $linkClass ]
+			);
+		} else {
+			echo Html::rawElement( 'a', [ 'href' => '#', 'class' => $linkClass ], $this->data['skin']->msg( 'tempo-notifications' )->escaped() );
+		}
 
-	if ( $this->isEchoInstalled() ) {
-		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
-		echo $linkRenderer->makeLink(
-			SpecialPage::getTitleFor( 'Notifications' ),
-			$this->data['skin']->msg( 'tempo-notifications' )->text(),
-			[ 'class' => $linkClass ]
-		);
-	} else {
-		echo Html::rawElement( 'a', [ 'href' => '#', 'class' => $linkClass ], $this->data['skin']->msg( 'tempo-notifications' )->escaped() );
-	}
-?>
+		echo Html::openElement( 'ul', [
+			'class' => [ ( !$this->data['user']->isRegistered() ? 'anonymous-user' : '' ), $containerClass ]
+		] );
 
-<ul<?php if ( !$this->data['user']->isRegistered() ) {?> class="anonymous-user"<?php } ?>>
-	<?php
 		echo $this->output;
-	?>
-</ul>
-<?php
+
+		echo Html::closeElement( 'ul' );
 	}
 
 }

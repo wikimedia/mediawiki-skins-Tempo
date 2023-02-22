@@ -749,7 +749,10 @@ td.mw-label {
 	max-width: 35px;
 }
 
-/* Make the msg shown to anons a bit less cramped, if you will */
-#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul.anonymous-user {
+/* Make the msg shown to anons a bit less cramped, if you will;
+ * ditto for the registered users' "no notifications" message if and when Echo is installed
+ */
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul.anonymous-user,
+#top > #topnav > .userlinks-wrapper > #userlinks > ul > li > ul.no-notifications {
 	padding-left: 10px;
 }
