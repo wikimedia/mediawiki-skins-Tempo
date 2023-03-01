@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"tempo-desc": "En einfache Benotzerinterface",
 	"tempo-myprofile": "Mäi Profil",
+	"tempo-no-notifications": "Dir hutt keng Notifikatiounen",
 	"tempo-notifications": "Notifikatiounen",
 	"tempo-ribbon-nonewmessages": "Dir hutt keng nei Messagen",
 	"tempo-ribbon-newmessages": "Dir hutt nei Messagen",
