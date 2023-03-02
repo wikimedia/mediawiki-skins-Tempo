@@ -3,11 +3,13 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Re demz"
 		]
 	},
 	"tempo-desc": "Um tema limpo, distinto e simples",
 	"tempo-myprofile": "Meu Perfil",
+	"tempo-no-notifications": "Você não tem notificações",
 	"tempo-notifications": "Notificações",
 	"tempo-messages-login": "Por favor [[Special:UserLogin|entre]] para ver suas notificações.",
 	"tempo-ribbon-nonewmessages": "Você não tem novas mensagens",

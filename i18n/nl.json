@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Robin van der Vliet",
 			"Robin0van0der0vliet",
 			"Siebrand"
@@ -9,6 +10,7 @@
 	},
 	"tempo-desc": "Een schoon, duidelijk en eenvoudig uiterlijk",
 	"tempo-myprofile": "Mijn profiel",
+	"tempo-no-notifications": "U hebt geen meldingen",
 	"tempo-notifications": "Meldingen",
 	"tempo-messages-login": "[[Special:UserLogin|Meldt u aan]] om uw meldingen te bekijken.",
 	"tempo-ribbon-nonewmessages": "U hebt geen nieuwe berichten",
