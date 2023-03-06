@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Tofeiku"
 		]
 	},
 	"tempo-desc": "Rupa yang kemas, ringkas dan tersendiri",
 	"tempo-myprofile": "Profil Saya",
+	"tempo-no-notifications": "Anda tiada pemberitahuan",
 	"tempo-notifications": "Pemberitahuan",
 	"tempo-ribbon-nonewmessages": "Anda tiada pesanan baru",
 	"tempo-ribbon-newmessages": "Anda ada pesanan baru",
