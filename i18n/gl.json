@@ -6,9 +6,11 @@
 	},
 	"tempo-desc": "Unha aparencia limpa, distinta e sinxela",
 	"tempo-myprofile": "O meu perfil",
+	"tempo-no-notifications": "Non ten ningunha notificación",
 	"tempo-notifications": "Notificacións",
+	"tempo-messages-login": "[[Special:UserLogin|Acceda ao sistema]] para ver as súas notificacións.",
 	"tempo-ribbon-nonewmessages": "Non ten mensaxes novas",
 	"tempo-ribbon-newmessages": "Ten mensaxes novas",
 	"tempo-hello": "Ola, $1",
-	"tempo-guest": "convidado"
+	"tempo-guest": "Convidado"
 }
