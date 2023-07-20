@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"BerryAVGN"
 		]
 	},
 	"tempo-desc": "Чистая, чёткая и простая тема оформления",
 	"tempo-myprofile": "Мой профиль",
+	"tempo-no-notifications": "У вас нет уведомлений",
 	"tempo-notifications": "Уведомления",
 	"tempo-messages-login": "[[Special:UserLogin|Войдите]], чтобы увидеть уведомления.",
 	"tempo-ribbon-nonewmessages": "У вас нет новых сообщений",
