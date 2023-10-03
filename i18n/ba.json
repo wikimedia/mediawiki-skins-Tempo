@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Азат Хәлилов",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"З. ӘЙЛЕ"
 		]
 	},
-	"tempo-desc": "Таҙа, асыҡ һәм ябай биҙәү темаһы",
+	"tempo-desc": "Таҙа, асыҡ һәм ябай биҙәлеш темаһы",
 	"tempo-myprofile": "Минең профиль",
 	"tempo-notifications": "Белдереүҙәр",
-	"tempo-ribbon-nonewmessages": "Һеҙҙең яңы хәбәрҙәргеҙ юҡ.",
-	"tempo-ribbon-newmessages": "Һеҙҙең яңы хәбәрҙәргеҙ бар",
+	"tempo-ribbon-nonewmessages": "Яңы хәбәрҙәргеҙ юҡ.",
+	"tempo-ribbon-newmessages": "Яңы хәбәрҙәргеҙ бар",
 	"tempo-hello": "Һаумыһығыҙ, $1",
 	"tempo-guest": "Ҡунаҡ"
 }
