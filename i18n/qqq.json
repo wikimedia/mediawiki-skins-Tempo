@@ -4,6 +4,7 @@
 			"Liuxinyu970226"
 		]
 	},
+	"tempo-prefs-talkpage": "{{optional}}\nLink to the skin's talk page on MediaWiki.org; it is shown before the preview link in skin preferences on Special:Preferences. Inspired by [https://phabricator.wikimedia.org/T307113 T307113].",
 	"tempo-desc": "{{desc|what=skin|name=Tempo|url=https://www.mediawiki.org/wiki/Skin:Tempo}}",
 	"tempo-myprofile": "Label of one of two menus in the top navigation, providing links to a user's pages (such as talk page, contributions, user page, and preferences)",
 	"tempo-no-notifications": "Message shown to registered users on the Echo flyout menu when the [[mw:Extension:Echo|Echo extension]] is installed but they have no notifications",
