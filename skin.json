@@ -11,9 +11,6 @@
 	"requires": {
 		"MediaWiki": ">=1.39.0"
 	},
-	"ConfigRegistry": {
-		"tempo": "GlobalVarConfig::newInstance"
-	},
 	"ValidSkinNames": {
 		"tempo": {
 			"displayname": "Tempo",
