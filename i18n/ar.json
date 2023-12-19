@@ -4,14 +4,15 @@
 			"Maroen1990",
 			"Mido",
 			"محمد أحمد عبد الفتاح",
-			"Meno25"
+			"Meno25",
+			"علاء"
 		]
 	},
 	"tempo-desc": "واجهة مميزة، واضحة وبسيطة",
 	"tempo-myprofile": "صفحة المستخدم",
 	"tempo-notifications": "إخطارات",
 	"tempo-messages-login": "يرجى [[Special:UserLogin|تسجيل الدخول]] لعرض إشعاراتك.",
-	"tempo-ribbon-nonewmessages": "ليست لديك رسائل جديدة.",
+	"tempo-ribbon-nonewmessages": "ليس لديك رسائل جديدة.",
 	"tempo-ribbon-newmessages": "لديك رسائل جديدة",
 	"tempo-hello": "مرحبا, $1",
 	"tempo-guest": "ضيف"
