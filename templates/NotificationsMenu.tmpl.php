@@ -3,6 +3,9 @@
 // If Echo extension is installed, we use its messages
 // If not installed, we only use it for new talk page notifications
 
+use MediaWiki\Extension\Notifications\NotifUser;
+use MediaWiki\Extension\Notifications\Services;
+use MediaWiki\Extension\Notifications\DataOutputFormatter;
 use MediaWiki\MediaWikiServices;
 
 class NotificationsMenuTemplate extends BaseTemplate {
@@ -23,7 +26,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 			$attributeManager = EchoAttributeManager::newFromGlobalVars();
 		} else {
 			// @see https://github.com/wikimedia/mediawiki-extensions-Echo/commit/596729d852ae5fe8c6b3f43c582982f15ac349f3
-			$attributeManager = EchoServices::getInstance()->getAttributeManager();
+			$attributeManager = Services::getInstance()->getAttributeManager();
 		}
 
 		$eventTypes = $attributeManager->getUserEnabledEvents( $user, 'web' );
@@ -35,7 +38,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 			$language = $this->data['skin']->getLanguage();
 
 			foreach ( $notifications as $note ) {
-				$formatted = EchoDataOutputFormatter::formatOutput( $note, 'html', $user, $language );
+				$formatted = DataOutputFormatter::formatOutput( $note, 'html', $user, $language );
 				$output .= $formatted['*'];
 			}
 		} else {
@@ -51,7 +54,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 	public function hasNotifications() {
 		if ( $this->isEchoInstalled() ) {
 			if ( $this->data['user']->isRegistered() ) {
-				$notifUser = MWEchoNotifUser::newFromUser( $this->data['user'] );
+				$notifUser = NotifUser::newFromUser( $this->data['user'] );
 				return $notifUser->getNotificationCount() >= 1;
 			} else {
 				$this->output = $this->data['skin']->msg( 'tempo-messages-login' )->parse();
