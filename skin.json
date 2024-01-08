@@ -9,7 +9,7 @@
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">=1.39.0"
+		"MediaWiki": ">=1.41.0"
 	},
 	"ConfigRegistry": {
 		"tempo": "GlobalVarConfig::newInstance"
