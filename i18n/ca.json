@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"SMP"
 		]
 	},
+	"tempo-desc": "Una aparença neta, clara i senzilla",
 	"tempo-myprofile": "El meu perfil",
 	"tempo-notifications": "Notificacions",
+	"tempo-messages-login": "Si us plau, [[Special:UserLogin|inicieu la sessió]] per a veure les vostres notificacions.",
 	"tempo-ribbon-nonewmessages": "No teniu missatges nous",
 	"tempo-ribbon-newmessages": "Teniu missatges nous",
 	"tempo-hello": "Hola, $1",
