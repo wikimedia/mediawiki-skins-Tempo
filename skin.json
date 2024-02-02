@@ -36,7 +36,7 @@
 	},
 	"ResourceModules": {
 		"skins.tempo": {
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"styles": {
 				"resources/tempo.css": {
 					"media": "screen"
