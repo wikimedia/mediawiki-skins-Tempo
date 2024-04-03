@@ -156,7 +156,7 @@ class TempoTemplate extends BaseTemplate {
 					<div id="sidebar" role="navigation">
 						<?php
 							foreach ( $this->getSidebar() as $boxName => $box ) { ?>
-										<section id="<?php echo Sanitizer::escapeIdForAttribute( $box['id'] ) ?>"<?php echo Linker::tooltip( $box['id'] ) ?>>
+										<section id="<?php echo htmlspecialchars( Sanitizer::escapeIdForAttribute( $box['id'] ), ENT_QUOTES ) ?>"<?php echo Linker::tooltip( $box['id'] ) ?>>
 										<div class="top"><h3><?php echo htmlspecialchars( $box['header'] ); ?></h3></div>
 
 										<?php if ( is_array( $box['content'] ) ) { ?>
