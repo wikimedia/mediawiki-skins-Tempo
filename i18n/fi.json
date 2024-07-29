@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"McSalama"
+			"McSalama",
+			"Samoasambia"
 		]
 	},
 	"tempo-desc": "Puhdas, selkeä ja yksinkertainen teema",
 	"tempo-myprofile": "Profiili",
 	"tempo-notifications": "Ilmoitukset",
+	"tempo-messages-login": "[[Special:UserLogin|Kirjaudu sisään]] katsoaksesi ilmoituksesi.",
 	"tempo-ribbon-nonewmessages": "Ei uusia viestejä",
 	"tempo-ribbon-newmessages": "Sinulle on uusia viestejä",
 	"tempo-hello": "Hei, $1",
