@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cabal",
 			"Tow"
 		]
 	},
 	"tempo-myprofile": "ਮੇਰਾ ਖ਼ਾਕਾ",
+	"tempo-no-notifications": "ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ ਹੈ",
 	"tempo-notifications": "ਸੂਚਨਾਵਾਂ",
-	"tempo-ribbon-nonewmessages": "ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਨਵੇਂ ਸੁਨੇਹੇ ਨਹੀੰ ਹਨ।",
+	"tempo-ribbon-nonewmessages": "ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਨਵੇਂ ਸੁਨੇਹੇ ਨਹੀਂ ਹਨ।",
 	"tempo-ribbon-newmessages": "ਤੁਹਾਡੇ ਲਈ ਨਵੇਂ ਸੁਨੇਹੇ ਹਨ।",
 	"tempo-guest": "ਮਹਿਮਾਨ"
 }
