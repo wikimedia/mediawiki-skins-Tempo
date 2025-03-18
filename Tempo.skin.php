@@ -1,5 +1,8 @@
 <?php
 
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\Linker;
+
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  *

@@ -3,9 +3,11 @@
 // If Echo extension is installed, we use its messages
 // If not installed, we only use it for new talk page notifications
 
+use MediaWiki\Extension\Notifications\DataOutputFormatter;
+use MediaWiki\Extension\Notifications\Mapper\NotificationMapper;
 use MediaWiki\Extension\Notifications\NotifUser;
 use MediaWiki\Extension\Notifications\Services;
-use MediaWiki\Extension\Notifications\DataOutputFormatter;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 
 class NotificationsMenuTemplate extends BaseTemplate {
@@ -30,7 +32,7 @@ class NotificationsMenuTemplate extends BaseTemplate {
 		}
 
 		$eventTypes = $attributeManager->getUserEnabledEvents( $user, 'web' );
-		$mapper = new EchoNotificationMapper();
+		$mapper = new NotificationMapper();
 		$notifications = $mapper->fetchByUser( $user, self::MAX_NOTES, 0, $eventTypes );
 		$output = '';
 
