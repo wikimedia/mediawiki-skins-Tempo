@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"tempo-desc": "يوه پاکه، متمايزه او ساده پوښۍ",
 	"tempo-myprofile": "زما پېژنليک",
+	"tempo-no-notifications": "تاسو هېڅ خبرتياوې نه لرئ",
 	"tempo-notifications": "يادگيرنې",
+	"tempo-messages-login": "مهرباني وکړئ د خپلو خبرتياوو د کتلو لپاره [[Special:UserLogin|ننوځئ]]",
 	"tempo-ribbon-nonewmessages": "تاسې نوي پيغامونه نه لرئ",
 	"tempo-ribbon-newmessages": "تاسې نوي پيغامونه لرئ",
 	"tempo-hello": "سلامونه، $1",
