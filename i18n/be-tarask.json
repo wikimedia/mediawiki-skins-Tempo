@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Ucukor"
 		]
 	},
 	"tempo-desc": "Чыстая, выразная і простая тэма афармленьня",
 	"tempo-myprofile": "Мой профіль",
-	"tempo-notifications": "Паведамленьні",
+	"tempo-notifications": "Абвесткі",
 	"tempo-ribbon-nonewmessages": "У вас няма новых паведамленьняў",
 	"tempo-ribbon-newmessages": "Вы маеце новыя паведамленьні",
 	"tempo-hello": "Вітаем, $1",
