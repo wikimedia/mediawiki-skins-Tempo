@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Tofeiku"
+			"Tofeiku",
+			"Hakimi97"
 		]
 	},
 	"tempo-desc": "Rupa yang kemas, ringkas dan tersendiri",
@@ -11,6 +12,6 @@
 	"tempo-notifications": "Pemberitahuan",
 	"tempo-ribbon-nonewmessages": "Anda tiada pesanan baru",
 	"tempo-ribbon-newmessages": "Anda ada pesanan baru",
-	"tempo-hello": "Helo, $1",
+	"tempo-hello": "Apa khabar, $1",
 	"tempo-guest": "Tetamu"
 }
