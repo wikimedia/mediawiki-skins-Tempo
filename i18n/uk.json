@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Repakr"
 		]
 	},
 	"tempo-desc": "Ясна, чітка і проста тема оформлення",
 	"tempo-myprofile": "Мій профіль",
+	"tempo-no-notifications": "У Вас немає сповіщень",
 	"tempo-notifications": "Сповіщення",
 	"tempo-messages-login": "Будь ласка, [[Special:UserLogin|увійдіть]], щоб переглянути свої сповіщення.",
 	"tempo-ribbon-nonewmessages": "У Вас немає нових повідомлень",
