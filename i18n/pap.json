@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kallmemel"
+		]
+	},
+	"tempo-desc": "Un diseño limpi, distinto i simpel",
+	"tempo-myprofile": "Mi Perfil",
+	"tempo-no-notifications": "Bo no tin notifikashon",
+	"tempo-notifications": "Notifikashon",
+	"tempo-messages-login": "Por fabor [[Special:UserLogin|inisiá un seshon]] pa mira notifikashon.",
+	"tempo-ribbon-nonewmessages": "Bo no tin mensahe nobo.",
+	"tempo-ribbon-newmessages": "Bo tin mensahe nobo",
+	"tempo-hello": "Haló, $1",
+	"tempo-guest": "Invitado"
+}
