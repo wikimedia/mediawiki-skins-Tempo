@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"tempo-desc": "Muuqaal nadiif ah, kala soocan, oo fudud",
+	"tempo-myprofile": "Profile-kayga",
+	"tempo-no-notifications": "Ma haysatid ogeysiisyo",
+	"tempo-notifications": "Ogeysiisyo",
+	"tempo-messages-login": "Fadlan [[Special:UserLogin|soo gal]] si aad u aragto ogeysiisyadaada.",
+	"tempo-ribbon-nonewmessages": "Ma haysatid fariimo cusub",
+	"tempo-ribbon-newmessages": "Waxaad haysataa fariimo cusub",
+	"tempo-hello": "Salaan, $1",
+	"tempo-guest": "Marti"
+}
