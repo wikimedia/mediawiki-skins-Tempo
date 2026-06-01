@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"HakanIST",
 			"MuratTheTurkish",
 			"Rapsar"
 		]
 	},
+	"tempo-prefs-talkpage": "[[mw:Skin talk:Tempo|{{int:talk}}]]",
 	"tempo-desc": "Temiz, farklı ve basit bir görünüm",
 	"tempo-myprofile": "Profilim",
+	"tempo-no-notifications": "Bildiriminiz yok",
 	"tempo-notifications": "Bildirimler",
 	"tempo-messages-login": "Bildirimlerinizi görüntülemek için lütfen [[Special:UserLogin|oturum açın]].",
 	"tempo-ribbon-nonewmessages": "Yeni mesajınız yok",
