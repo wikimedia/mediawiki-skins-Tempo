@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"tempo-prefs-talkpage": "[[mw:Skin talk:Tempo|{{int:talk}}]]",
+	"tempo-desc": "Čistá, výrazná a jednoduchá téma vzhľadu",
+	"tempo-myprofile": "Môj profil",
+	"tempo-no-notifications": "Nemáte žiadne upozornenia",
+	"tempo-notifications": "Upozornenia",
+	"tempo-messages-login": "Na zobrazenie upozornení sa prosím [[Special:UserLogin|prihláste]].",
+	"tempo-ribbon-nonewmessages": "Nemáte žiadne nové správy",
+	"tempo-ribbon-newmessages": "Máte nové správy",
+	"tempo-hello": "Dobrý deň, $1",
+	"tempo-guest": "Hosť"
+}
