@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Oldstoneage"
+			"Oldstoneage",
+			"Bachounda"
 		]
 	},
 	"tempo-desc": "لابوس نضيف، باين و بسيط",
 	"tempo-myprofile": "الپروفيل ديالي",
+	"tempo-no-notifications": "ما عندك والو إشعارات",
 	"tempo-notifications": "تنباهات",
+	"tempo-messages-login": "من فضلك [[Special:UserLogin|سجّل الدخول]] باش تشوف إشعاراتك.",
 	"tempo-ribbon-nonewmessages": "ما عندكش ميساجات جدُد",
 	"tempo-ribbon-newmessages": "عندك ميساجات جدُد",
 	"tempo-hello": "مرحبا، $1",
