@@ -5,5 +5,8 @@
 		]
 	},
 	"tempo-myprofile": "Minu profiil",
-	"tempo-hello": "Tere, $1"
+	"tempo-notifications": "Teavitused",
+	"tempo-ribbon-newmessages": "Sulle on uusi sõnumeid",
+	"tempo-hello": "Tere, $1",
+	"tempo-guest": "Külaline"
 }
