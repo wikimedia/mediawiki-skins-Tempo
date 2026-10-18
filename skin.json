@@ -17,9 +17,18 @@
 			"class": "SkinTempo",
 			"args": [ {
 				"name": "tempo",
-				"bodyOnly": true,
 				"styles": [
 					"skins.tempo"
+				],
+				"menus": [
+					"associated-pages",
+					"views",
+					"actions",
+					"variants",
+					"user-page",
+					"user-interface-preferences",
+					"notifications",
+					"user-menu"
 				]
 			} ]
 		}

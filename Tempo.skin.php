@@ -123,7 +123,7 @@ class TempoTemplate extends BaseTemplate {
 	public function getTabs( $side = 'left' ) {
 		$content_navigation = $this->get( 'content_navigation' );
 
-		$namespaces = $content_navigation['namespaces'];
+		$namespaces = $content_navigation['associated-pages'];
 		$actions = $content_navigation['actions'];
 		$views = $content_navigation['views'];
 
